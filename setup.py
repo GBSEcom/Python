@@ -29,6 +29,7 @@ setup(
     name=NAME,
     version=VERSION,
     description="First Data Gateway RESTFUL API Python SDK",
+    author="Eric Margules",
     author_email="eric.margules@firstdata.com",
     url="https://docs.firstdata.com/org/gateway",
     keywords=["Payment", "Gateway", "SDK", "Developer", "First Data"],
