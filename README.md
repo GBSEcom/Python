@@ -1,4 +1,4 @@
-# FirstApiClient
+# First Data Gateway
 ## Requirements
 
 Python 2.7 and 3.4+
@@ -7,9 +7,9 @@ Python 2.7 and 3.4+
 ### pip install
 
 ```sh
-pip install first_api_client
+pip install first_data_gateway
 ```
-(you may need to run `pip` with root permission: `sudo pip install first_api_client`)
+(you may need to run `pip` with root permission: `sudo pip install first_data_gateway`)
 
 You can also install directly from Github:
 
