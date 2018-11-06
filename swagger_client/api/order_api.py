@@ -33,13 +33,13 @@ class OrderApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def perform_payment_post_authorisation(self, content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs):  # noqa: E501
+    def perform_payment_post_authorisation(self, content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs):  # noqa: E501
         """Use this to capture/complete a transaction. Partial postauths are allowed.  # noqa: E501
 
         This can be used for postauth and partial postauths.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.perform_payment_post_authorisation(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, async=True)
+        >>> thread = api.perform_payment_post_authorisation(content_type, client_request_id, api_key, timestamp, order_id, payload, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -47,9 +47,9 @@ class OrderApi(object):
         :param str client_request_id: A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. (required)
         :param str api_key: (required)
         :param int timestamp: Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). (required)
-        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (required)
         :param str order_id: Gateway order identifier as returned in the parameter orderId (required)
         :param SecondaryTransaction payload: (required)
+        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
         :param str store_id: an optional outlet id for clients that support multiple store in the same developer app
         :return: TransactionResponse
                  If the method is called asynchronously,
@@ -57,18 +57,18 @@ class OrderApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async'):
-            return self.perform_payment_post_authorisation_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs)  # noqa: E501
+            return self.perform_payment_post_authorisation_with_http_info(content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs)  # noqa: E501
         else:
-            (data) = self.perform_payment_post_authorisation_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs)  # noqa: E501
+            (data) = self.perform_payment_post_authorisation_with_http_info(content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs)  # noqa: E501
             return data
 
-    def perform_payment_post_authorisation_with_http_info(self, content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs):  # noqa: E501
+    def perform_payment_post_authorisation_with_http_info(self, content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs):  # noqa: E501
         """Use this to capture/complete a transaction. Partial postauths are allowed.  # noqa: E501
 
         This can be used for postauth and partial postauths.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.perform_payment_post_authorisation_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, async=True)
+        >>> thread = api.perform_payment_post_authorisation_with_http_info(content_type, client_request_id, api_key, timestamp, order_id, payload, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -76,16 +76,16 @@ class OrderApi(object):
         :param str client_request_id: A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. (required)
         :param str api_key: (required)
         :param int timestamp: Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). (required)
-        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (required)
         :param str order_id: Gateway order identifier as returned in the parameter orderId (required)
         :param SecondaryTransaction payload: (required)
+        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
         :param str store_id: an optional outlet id for clients that support multiple store in the same developer app
         :return: TransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['content_type', 'client_request_id', 'api_key', 'timestamp', 'message_signature', 'order_id', 'payload', 'store_id']  # noqa: E501
+        all_params = ['content_type', 'client_request_id', 'api_key', 'timestamp', 'order_id', 'payload', 'message_signature', 'store_id']  # noqa: E501
         all_params.append('async')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -116,10 +116,6 @@ class OrderApi(object):
         if ('timestamp' not in params or
                 params['timestamp'] is None):
             raise ValueError("Missing the required parameter `timestamp` when calling `perform_payment_post_authorisation`")  # noqa: E501
-        # verify the required parameter 'message_signature' is set
-        if ('message_signature' not in params or
-                params['message_signature'] is None):
-            raise ValueError("Missing the required parameter `message_signature` when calling `perform_payment_post_authorisation`")  # noqa: E501
         # verify the required parameter 'order_id' is set
         if ('order_id' not in params or
                 params['order_id'] is None):
@@ -184,13 +180,13 @@ class OrderApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def return_transaction(self, content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs):  # noqa: E501
+    def return_transaction(self, content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs):  # noqa: E501
         """Use this to return/refund on the order. Partial returns are allowed.  # noqa: E501
 
         This can be used for Returns and Partial Returns.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.return_transaction(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, async=True)
+        >>> thread = api.return_transaction(content_type, client_request_id, api_key, timestamp, order_id, payload, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -198,9 +194,9 @@ class OrderApi(object):
         :param str client_request_id: A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. (required)
         :param str api_key: (required)
         :param int timestamp: Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). (required)
-        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (required)
         :param str order_id: Gateway order identifier as returned in the parameter orderId (required)
         :param SecondaryTransaction payload: (required)
+        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
         :param str store_id: an optional outlet id for clients that support multiple store in the same developer app
         :return: TransactionResponse
                  If the method is called asynchronously,
@@ -208,18 +204,18 @@ class OrderApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async'):
-            return self.return_transaction_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs)  # noqa: E501
+            return self.return_transaction_with_http_info(content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs)  # noqa: E501
         else:
-            (data) = self.return_transaction_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs)  # noqa: E501
+            (data) = self.return_transaction_with_http_info(content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs)  # noqa: E501
             return data
 
-    def return_transaction_with_http_info(self, content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, **kwargs):  # noqa: E501
+    def return_transaction_with_http_info(self, content_type, client_request_id, api_key, timestamp, order_id, payload, **kwargs):  # noqa: E501
         """Use this to return/refund on the order. Partial returns are allowed.  # noqa: E501
 
         This can be used for Returns and Partial Returns.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.return_transaction_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, async=True)
+        >>> thread = api.return_transaction_with_http_info(content_type, client_request_id, api_key, timestamp, order_id, payload, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -227,16 +223,16 @@ class OrderApi(object):
         :param str client_request_id: A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. (required)
         :param str api_key: (required)
         :param int timestamp: Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). (required)
-        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (required)
         :param str order_id: Gateway order identifier as returned in the parameter orderId (required)
         :param SecondaryTransaction payload: (required)
+        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
         :param str store_id: an optional outlet id for clients that support multiple store in the same developer app
         :return: TransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['content_type', 'client_request_id', 'api_key', 'timestamp', 'message_signature', 'order_id', 'payload', 'store_id']  # noqa: E501
+        all_params = ['content_type', 'client_request_id', 'api_key', 'timestamp', 'order_id', 'payload', 'message_signature', 'store_id']  # noqa: E501
         all_params.append('async')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -267,10 +263,6 @@ class OrderApi(object):
         if ('timestamp' not in params or
                 params['timestamp'] is None):
             raise ValueError("Missing the required parameter `timestamp` when calling `return_transaction`")  # noqa: E501
-        # verify the required parameter 'message_signature' is set
-        if ('message_signature' not in params or
-                params['message_signature'] is None):
-            raise ValueError("Missing the required parameter `message_signature` when calling `return_transaction`")  # noqa: E501
         # verify the required parameter 'order_id' is set
         if ('order_id' not in params or
                 params['order_id'] is None):

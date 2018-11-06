@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **perform_payment_post_authorisation**
-> TransactionResponse perform_payment_post_authorisation(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, store_id=store_id)
+> TransactionResponse perform_payment_post_authorisation(content_type, client_request_id, api_key, timestamp, order_id, payload, message_signature=message_signature, store_id=store_id)
 
 Use this to capture/complete a transaction. Partial postauths are allowed.
 
@@ -29,14 +29,14 @@ content_type = 'application/json' # str | content type (default to application/j
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | 
 timestamp = 789 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
-message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
 order_id = 'order_id_example' # str | Gateway order identifier as returned in the parameter orderId
 payload = swagger_client.SecondaryTransaction() # SecondaryTransaction | 
+message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 store_id = 'store_id_example' # str | an optional outlet id for clients that support multiple store in the same developer app (optional)
 
 try:
     # Use this to capture/complete a transaction. Partial postauths are allowed.
-    api_response = api_instance.perform_payment_post_authorisation(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, store_id=store_id)
+    api_response = api_instance.perform_payment_post_authorisation(content_type, client_request_id, api_key, timestamp, order_id, payload, message_signature=message_signature, store_id=store_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling OrderApi->perform_payment_post_authorisation: %s\n" % e)
@@ -50,9 +50,9 @@ Name | Type | Description  | Notes
  **client_request_id** | **str**| A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. | 
  **api_key** | **str**|  | 
  **timestamp** | **int**| Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). | 
- **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | 
  **order_id** | **str**| Gateway order identifier as returned in the parameter orderId | 
  **payload** | [**SecondaryTransaction**](SecondaryTransaction.md)|  | 
+ **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | [optional] 
  **store_id** | **str**| an optional outlet id for clients that support multiple store in the same developer app | [optional] 
 
 ### Return type
@@ -71,7 +71,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **return_transaction**
-> TransactionResponse return_transaction(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, store_id=store_id)
+> TransactionResponse return_transaction(content_type, client_request_id, api_key, timestamp, order_id, payload, message_signature=message_signature, store_id=store_id)
 
 Use this to return/refund on the order. Partial returns are allowed.
 
@@ -91,14 +91,14 @@ content_type = 'application/json' # str | content type (default to application/j
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | 
 timestamp = 789 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
-message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
 order_id = 'order_id_example' # str | Gateway order identifier as returned in the parameter orderId
 payload = swagger_client.SecondaryTransaction() # SecondaryTransaction | 
+message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 store_id = 'store_id_example' # str | an optional outlet id for clients that support multiple store in the same developer app (optional)
 
 try:
     # Use this to return/refund on the order. Partial returns are allowed.
-    api_response = api_instance.return_transaction(content_type, client_request_id, api_key, timestamp, message_signature, order_id, payload, store_id=store_id)
+    api_response = api_instance.return_transaction(content_type, client_request_id, api_key, timestamp, order_id, payload, message_signature=message_signature, store_id=store_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling OrderApi->return_transaction: %s\n" % e)
@@ -112,9 +112,9 @@ Name | Type | Description  | Notes
  **client_request_id** | **str**| A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. | 
  **api_key** | **str**|  | 
  **timestamp** | **int**| Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). | 
- **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | 
  **order_id** | **str**| Gateway order identifier as returned in the parameter orderId | 
  **payload** | [**SecondaryTransaction**](SecondaryTransaction.md)|  | 
+ **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | [optional] 
  **store_id** | **str**| an optional outlet id for clients that support multiple store in the same developer app | [optional] 
 
 ### Return type

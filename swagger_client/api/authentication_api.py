@@ -33,13 +33,13 @@ class AuthenticationApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def v1_authentication_access_tokens_post(self, content_type, client_request_id, api_key, timestamp, message_signature, **kwargs):  # noqa: E501
+    def v1_authentication_access_tokens_post(self, content_type, client_request_id, api_key, timestamp, **kwargs):  # noqa: E501
         """Generate an access token for user authentication  # noqa: E501
 
         This is the access token generation call for authorizing subsequent financial transactions. A valid access token is required for web client requests.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.v1_authentication_access_tokens_post(content_type, client_request_id, api_key, timestamp, message_signature, async=True)
+        >>> thread = api.v1_authentication_access_tokens_post(content_type, client_request_id, api_key, timestamp, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -47,25 +47,25 @@ class AuthenticationApi(object):
         :param str client_request_id: A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. (required)
         :param str api_key: (required)
         :param int timestamp: Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). (required)
-        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (required)
+        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
         :return: AccessTokenResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async'):
-            return self.v1_authentication_access_tokens_post_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, **kwargs)  # noqa: E501
+            return self.v1_authentication_access_tokens_post_with_http_info(content_type, client_request_id, api_key, timestamp, **kwargs)  # noqa: E501
         else:
-            (data) = self.v1_authentication_access_tokens_post_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, **kwargs)  # noqa: E501
+            (data) = self.v1_authentication_access_tokens_post_with_http_info(content_type, client_request_id, api_key, timestamp, **kwargs)  # noqa: E501
             return data
 
-    def v1_authentication_access_tokens_post_with_http_info(self, content_type, client_request_id, api_key, timestamp, message_signature, **kwargs):  # noqa: E501
+    def v1_authentication_access_tokens_post_with_http_info(self, content_type, client_request_id, api_key, timestamp, **kwargs):  # noqa: E501
         """Generate an access token for user authentication  # noqa: E501
 
         This is the access token generation call for authorizing subsequent financial transactions. A valid access token is required for web client requests.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.v1_authentication_access_tokens_post_with_http_info(content_type, client_request_id, api_key, timestamp, message_signature, async=True)
+        >>> thread = api.v1_authentication_access_tokens_post_with_http_info(content_type, client_request_id, api_key, timestamp, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -73,7 +73,7 @@ class AuthenticationApi(object):
         :param str client_request_id: A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. (required)
         :param str api_key: (required)
         :param int timestamp: Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). (required)
-        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (required)
+        :param str message_signature: Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256  algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal.
         :return: AccessTokenResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -110,10 +110,6 @@ class AuthenticationApi(object):
         if ('timestamp' not in params or
                 params['timestamp'] is None):
             raise ValueError("Missing the required parameter `timestamp` when calling `v1_authentication_access_tokens_post`")  # noqa: E501
-        # verify the required parameter 'message_signature' is set
-        if ('message_signature' not in params or
-                params['message_signature'] is None):
-            raise ValueError("Missing the required parameter `message_signature` when calling `v1_authentication_access_tokens_post`")  # noqa: E501
 
         collection_formats = {}
 
