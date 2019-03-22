@@ -42,7 +42,7 @@ class Signature:
 			obj_dict = obj
 		else:
 			obj_dict = {obj.attribute_map[attr]: getattr(obj, attr)
-				for attr, _ in six.iteritems(obj.swagger_types)
+				for attr, _ in six.iteritems(obj.openapi_types)
 				if getattr(obj, attr) is not None}
 
 		return {key: self.sanitize_for_serialization(val)

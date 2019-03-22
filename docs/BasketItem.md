@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** | Item ID | [optional] 
-**description** | **str** | Referenced parent Business Entity ID in master database for the outlets // COPY-PASTE ERROR? | [optional] 
+**description** | **str** | Item in the basket | [optional] 
 **unit_price** | [**Amount**](Amount.md) |  | [optional] 
 **count** | **int** | Total quantity of items | [optional] 
 

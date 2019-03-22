@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**order_id** | **str** |  | [optional] 
+**order_id** | **str** | Client Order ID if supplied by client. | [optional] 
 **billing** | [**Billing**](Billing.md) |  | [optional] 
 **shipping** | [**Shipping**](Shipping.md) |  | [optional] 
 

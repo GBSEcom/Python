@@ -1,5 +1,5 @@
-from swagger_client.configuration import Configuration
-from swagger_client.api_client import ApiClient
+from openapi_client.configuration import Configuration
+from openapi_client.api_client import ApiClient
 
 class ClientContext:
 

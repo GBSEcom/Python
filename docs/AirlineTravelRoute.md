@@ -4,14 +4,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **departure_date** | **date** | Date of departure | [optional] 
-**origin** | **str** |  | [optional] 
-**destination** | **str** |  | [optional] 
-**carrier_code** | **str** |  | [optional] 
-**service_class** | **str** |  | [optional] 
-**stopover_type** | **str** |  | [optional] 
-**fare_basis_code** | **str** |  | [optional] 
+**origin** | **str** | The IATA code for the departure airport. | [optional] 
+**destination** | **str** | The IATA code for the destination airport. | [optional] 
+**carrier_code** | **str** | The IATA code for the carrier. | [optional] 
+**service_class** | **str** | The airline code for the service class of the ticket. | [optional] 
+**stopover_type** | **str** | Indicates whether the route is direct or not. | [optional] 
+**fare_basis_code** | **str** | The airline fare basis code. | [optional] 
 **departure_tax** | **float** |  | [optional] 
-**flight_number** | **str** |  | [optional] 
+**flight_number** | **str** | The airline flight number associated with the ticket. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
