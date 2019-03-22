@@ -35,6 +35,7 @@ import openapi_client
 import simple
 from simple import MerchantCredentials
 from simple import Gateway
+from simple import ObjectBuilder
 from openapi_client.rest import ApiException
 from pprint import pprint
 
@@ -45,7 +46,7 @@ credentials = MerchantCredentials(api_key, api_secret)
 
 gateway = Gateway.create(credentials)
 
-payload = 	"""{ 
+json_payload = 	"""{ 
 			\"amount\":{
 					\"currency\":\"USD\",
 					\"total\":\"12.10\"
@@ -62,6 +63,8 @@ payload = 	"""{
 				},
 				\"transactionType\":\"SALE\"
 			}"""
+
+payload = ObjectBuilder.build("PrimaryTransaction", json_payload)
 
 result = gateway.primary_payment_transaction(payload)
 pprint(result)
