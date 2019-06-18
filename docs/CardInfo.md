@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **brand** | **str** | The card brand. | [optional] 
 **brand_product_id** | **str** | The product ID of the brand. | [optional] 
-**card_function** | **str** | The functions of the card. Possible values are credit, debit, prepaid, voucher and undefined. | [optional] 
-**commercial_card** | **str** | Indicates whether it is a corporate or non corporate card | [optional] 
+**card_function** | [**CardFunction**](CardFunction.md) |  | [optional] 
+**commercial_card** | **str** | Indicates whether it is a corporate or non-corporate card. | [optional] 
 **issuer_country** | **str** | The country of the issuer. | [optional] 
 **issuer_name** | **str** | The name of the issuer. | [optional] 
 

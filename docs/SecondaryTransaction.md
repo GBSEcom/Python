@@ -3,11 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**transaction_origin** | [**TransactionOrigin**](TransactionOrigin.md) |  | [optional] 
-**amount** | [**Amount**](Amount.md) |  | [optional] 
-**split_shipment** | [**SplitShipment**](SplitShipment.md) |  | [optional] 
-**soft_descriptor** | [**SoftDescriptor**](SoftDescriptor.md) |  | [optional] 
-**additional_details** | [**SecondaryTransactionAdditionalDetails**](SecondaryTransactionAdditionalDetails.md) |  | [optional] 
+**request_type** | **str** | Object name of the secondary transaction request. | 
+**store_id** | **str** | An optional outlet ID for clients that support multiple stores in the same developer app. | [optional] 
+**comments** | **str** | Comment for the secondary transaction. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

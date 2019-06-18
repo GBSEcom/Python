@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**street** | **str** | Street Address Line 1. This field is required if the parent object is present. | 
-**street2** | **str** | Street Address Line 2. | [optional] 
-**state_province** | **str** | State or Province. | [optional] 
+**street** | **str** | First line of street address. | 
+**street2** | **str** | Second line of street address. | [optional] 
+**state_province** | **str** | State or province. | [optional] 
 **city** | **str** | City. | [optional] 
 **country** | **str** | Country. | 
 **phone** | [**CustomerAddressPhone**](CustomerAddressPhone.md) |  | [optional] 

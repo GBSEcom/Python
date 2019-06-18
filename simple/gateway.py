@@ -36,7 +36,7 @@ class Gateway:
 	def request_access_token(self):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign()
-		return self.authentication_api.v1_authentication_access_tokens_post(
+		return self.authentication_api.authentication_access_tokens_post(
 			self.CONTENT_TYPE,
 			signature_service.client_request_id,
 			self.get_api_key(),
@@ -45,7 +45,7 @@ class Gateway:
 		)
 
 	# Payment API
-	def update_transation(self, transaction_id, payload, region=''):
+	def finalize_secure_transaction(self, transaction_id, payload, region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign(payload)
 		return self.payment_api.finalize_secure_transaction(
@@ -62,7 +62,7 @@ class Gateway:
 	def primary_payment_transaction(self, payload, region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign(payload)
-		return self.payment_api.primary_payment_transaction(
+		return self.payment_api.submit_primary_transaction(
 			self.CONTENT_TYPE,
 			signature_service.client_request_id,
 			self.get_api_key(),
@@ -72,25 +72,10 @@ class Gateway:
 			region=region
 		)
 
-	def perform_payment_authorization_by_transaction(self, transaction_id, payload, store_id='', region=''):
+	def secondary_payment_transaction(self, transaction_id, payload, store_id='', region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign(payload)
-		return self.payment_api.perform_payment_post_authorisation(
-			self.CONTENT_TYPE,
-			signature_service.client_request_id,
-			self.get_api_key(),
-			signature_service.timestamp,
-			transaction_id,
-			payload,
-			message_signature=message_signature,
-			store_id=store_id,
-			region=region
-		)
-
-	def return_transaction(self, transaction_id, payload, store_id='', region=''):
-		signature_service = self.get_signature_service()
-		message_signature = signature_service.sign(payload)
-		return self.payment_api.return_transaction(
+		return self.payment_api.submit_secondary_transaction(
 			self.CONTENT_TYPE,
 			signature_service.client_request_id,
 			self.get_api_key(),
@@ -116,20 +101,6 @@ class Gateway:
 			region=region
 		)
 
-	def void_transaction(self, transaction_id, store_id='', region=''):
-		signature_service = self.get_signature_service()
-		message_signature = signature_service.sign()
-		return self.payment_api.void_transaction(
-			self.CONTENT_TYPE,
-			signature_service.client_request_id,
-			self.get_api_key(),
-			signature_service.timestamp,
-			transaction_id,
-			message_signature=message_signature,
-			store_id=store_id,
-			region=region
-		)
-
 	# Order API
 	def order_inquiry(self, order_id, store_id='', region=''):
 		signature_service = self.get_signature_service()
@@ -145,10 +116,10 @@ class Gateway:
 			region=region
 		)
 
-	def perform_payment_post_authorization_by_order(self, order_id, payload, store_id='', region=''):
+	def perform_secondary_transaction_by_order(self, order_id, payload, region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign(payload)
-		return self.order_api.order_post_auth(
+		return self.order_api.submit_secondary_transaction_from_order(
 			self.CONTENT_TYPE,
 			signature_service.client_request_id,
 			self.get_api_key(),
@@ -156,22 +127,6 @@ class Gateway:
 			order_id,
 			payload,
 			message_signature=message_signature,
-			store_id=store_id,
-			region=region
-		)
-
-	def return_transaction_by_order(self, order_id, payload, store_id='', region=''):
-		signature_service = self.get_signature_service()
-		message_signature = signature_service.sign(payload)
-		return self.order_api.order_return_transaction(
-			self.CONTENT_TYPE,
-			signature_service.client_request_id,
-			self.get_api_key(),
-			signature_service.timestamp,
-			order_id,
-			payload,
-			message_signature=message_signature,
-			store_id=store_id,
 			region=region
 		)
 

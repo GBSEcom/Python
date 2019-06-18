@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** | CVV Response Code. This field is required if the parent object is present. | 
-**status** | **str** | Interpretation of the Response Code. | [optional] 
-**scheme** | **str** | Identifier of the Scheme. This field is required if the parent object is present. | 
+**code** | **str** | CVV response code. | 
+**status** | **str** | Interpretation of the response code. | [optional] 
+**scheme** | **str** | Identifier of the scheme. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
