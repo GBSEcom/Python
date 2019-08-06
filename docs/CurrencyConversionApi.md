@@ -15,6 +15,7 @@ Generate dynamic currency conversion transactions.
 Sale, return and lookup exchange rate with dynamic currency conversion option.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -64,6 +65,17 @@ No authorization required
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

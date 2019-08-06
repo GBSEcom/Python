@@ -246,5 +246,3 @@ Class | Method | HTTP request | Description
  - [UnionPayAuthenticationVerificationRequest](docs/UnionPayAuthenticationVerificationRequest.md)
  - [UsePaymentToken](docs/UsePaymentToken.md)
  - [VoidTransaction](docs/VoidTransaction.md)
-
-

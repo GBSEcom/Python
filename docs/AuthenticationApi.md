@@ -15,6 +15,7 @@ Generate an access token for user authentication.
 This is the access token generation call for authorizing subsequent financial transactions. A valid access token is required for web client requests.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -60,6 +61,17 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

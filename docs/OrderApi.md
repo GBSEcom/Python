@@ -16,6 +16,7 @@ Retrieve the state of an order.
 Use this query to get the current state of an existing order.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -68,6 +69,17 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **submit_secondary_transaction_from_order**
@@ -78,6 +90,7 @@ Perform return or postAuth secondary transactions.
 Use this to perform a postAuth or return secondary transaction using order ID. Partial postAuths and returns are allowed.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -129,6 +142,19 @@ No authorization required
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | The attempted action is not valid according to gateway rules. For example, the merchant is not set-up or the order already exists. |  -  |
+**422** | The endpoint declined the transaction. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

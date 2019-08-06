@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**request_type** | **str** | Object name of the exchange rate request. | [optional] 
-**base_amount** | **float** | The original amount of the merchant currency for calculation. | [optional] 
+**request_type** | **str** | Object name of the exchange rate request. | 
+**base_amount** | **float** | The original amount of the merchant currency for calculation. | 
 **store_id** | **str** | An optional outlet ID for clients that support multiple stores in the same app. | [optional] 
 **bin** | **str** | A bank identification number (BIN) of the card to be used for DCC. | 
 

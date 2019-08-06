@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**request_type** | **str** | Object name of the secondary transaction request. | [optional] 
+**request_type** | **str** | Object name of the secondary transaction request. | 
 **store_id** | **str** | An optional outlet ID for clients that support multiple stores in the same developer app. | [optional] 
 **comments** | **str** | Comment for the secondary transaction. | [optional] 
 **transaction_amount** | [**Amount**](Amount.md) |  | 

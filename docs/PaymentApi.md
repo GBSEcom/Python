@@ -18,6 +18,7 @@ Update a 3DSecure or UnionPay payment and continue processing.
 Use this to handle a 3DSecure redirect response or UnionPay authentication, updating the transaction and continuing processing.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -70,6 +71,20 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | The attempted action is not valid according to gateway rules. For example, the merchant is not set-up or the order already exists. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**422** | The endpoint declined the transaction. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **submit_primary_transaction**
@@ -77,9 +92,10 @@ No authorization required
 
 Generate a primary transaction.
 
-Use this to originate a financial transaction like a sale, preauthorization, or credit.
+Use this to originate a financial transaction like a sale, preauthorization, or credit. For payment methods AliPay, PayPal and GooglePay the response will be simulated in Try It Out to reflect a successful response.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -93,7 +109,7 @@ content_type = 'application/json' # str | Content type. (default to 'application
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
-primary_transaction = openapi_client.PrimaryTransaction() # PrimaryTransaction | Accepted request types: AliPaySaleTransaction, ChinaPnRSaleTransaction, PaymentCardCreditTransaction, PaymentCardForcedTicketTransaction, PaymentCardSaleTransaction, PaymentCardPreAuthTransaction, PaymentCardPayerAuthTransaction, PaymentTokenCreditTransaction, PaymentTokenPreAuthTransaction, PaymentTokenSaleTransaction, PaypalCreditTransaction, and SepaSaleTransaction.
+primary_transaction = openapi_client.PrimaryTransaction() # PrimaryTransaction | Accepted request types: AliPaySaleTransaction, ChinaPnRSaleTransaction, PaymentCardCreditTransaction, PaymentCardForcedTicketTransaction, PaymentCardSaleTransaction, PaymentCardPreAuthTransaction, PaymentCardPayerAuthTransaction, PaymentCardDisbursementTransaction, PaymentTokenCreditTransaction, PaymentTokenPreAuthTransaction, PaymentTokenSaleTransaction, PaymentTokenDisbursementTransaction, PaypalCreditTransaction, SepaSaleTransaction, WalletSaleTransaction, and WalletPreAuthTransaction.
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
 
@@ -113,7 +129,7 @@ Name | Type | Description  | Notes
  **client_request_id** | **str**| A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. | 
  **api_key** | **str**| Key given to merchant after boarding associating their requests with the appropriate app in Apigee. | 
  **timestamp** | **int**| Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). | 
- **primary_transaction** | [**PrimaryTransaction**](PrimaryTransaction.md)| Accepted request types: AliPaySaleTransaction, ChinaPnRSaleTransaction, PaymentCardCreditTransaction, PaymentCardForcedTicketTransaction, PaymentCardSaleTransaction, PaymentCardPreAuthTransaction, PaymentCardPayerAuthTransaction, PaymentTokenCreditTransaction, PaymentTokenPreAuthTransaction, PaymentTokenSaleTransaction, PaypalCreditTransaction, and SepaSaleTransaction. | 
+ **primary_transaction** | [**PrimaryTransaction**](PrimaryTransaction.md)| Accepted request types: AliPaySaleTransaction, ChinaPnRSaleTransaction, PaymentCardCreditTransaction, PaymentCardForcedTicketTransaction, PaymentCardSaleTransaction, PaymentCardPreAuthTransaction, PaymentCardPayerAuthTransaction, PaymentCardDisbursementTransaction, PaymentTokenCreditTransaction, PaymentTokenPreAuthTransaction, PaymentTokenSaleTransaction, PaymentTokenDisbursementTransaction, PaypalCreditTransaction, SepaSaleTransaction, WalletSaleTransaction, and WalletPreAuthTransaction. | 
  **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | [optional] 
  **region** | **str**| Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. | [optional] 
 
@@ -130,6 +146,20 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | The attempted action is not valid according to gateway rules. For example, the merchant is not set-up or the order already exists. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**422** | The endpoint declined the transaction. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **submit_secondary_transaction**
@@ -140,6 +170,7 @@ Perform a secondary transaction.
 Use this to perform a void, postAuth or return secondary transaction. Partial postAuths and returns are allowed.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -194,6 +225,20 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | The attempted action is not valid according to gateway rules. For example, the merchant is not set-up or the order already exists. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**422** | The endpoint declined the transaction. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **transaction_inquiry**
@@ -204,6 +249,7 @@ Retrieve the state of a transaction.
 Use this query to get the current state of an existing transaction.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -255,6 +301,20 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request cannot be authenticated or was submitted with the wrong credentials. |  -  |
+**403** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | The attempted action is not valid according to gateway rules. For example, the merchant is not set-up or the order already exists. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**422** | The endpoint declined the transaction. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

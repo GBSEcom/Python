@@ -15,6 +15,7 @@ Score a transaction for fraud.
 Use this to obtain a fraud score for a transaction.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -64,6 +65,19 @@ No authorization required
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | Error response. |  -  |
+**401** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | There was a problem communicating with the endpoint. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**422** | There was a problem communicating with the endpoint. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+**502** | There was a problem communicating with the endpoint. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

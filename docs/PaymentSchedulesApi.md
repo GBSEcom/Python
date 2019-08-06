@@ -18,6 +18,7 @@ Cancel a gateway payment schedule.
 Use this to cancel an existing gateway payment schedule.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -70,6 +71,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | There was a problem communicating with the endpoint. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**422** | There was a problem communicating with the endpoint. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_payment_schedule**
@@ -80,6 +93,7 @@ Create gateway payment schedule.
 Use this to create a gateway payment schedule.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -130,6 +144,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | The attempted action is not valid according to gateway rules. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**422** | The endpoint declined the transaction. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **inquiry_payment_schedule**
@@ -140,6 +166,7 @@ View a gateway payment schedule.
 Use this to view an existing gateway payment schedule.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -192,16 +219,27 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**415** | Format that is not supported by the server for the HTTP method. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_payment_schedule**
-> PaymentSchedulesResponse update_payment_schedule(content_type, client_request_id, api_key, timestamp, order_id, payment_schedules_request, message_signature=message_signature, region=region, store_id=store_id)
+> PaymentSchedulesResponse update_payment_schedule(content_type, client_request_id, api_key, timestamp, order_id, payment_schedules_request, message_signature=message_signature, region=region)
 
 Update a gateway payment schedule.
 
 Use this to update a gateway payment schedule.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -219,11 +257,10 @@ order_id = 'order_id_example' # str | Gateway order identifier as returned in th
 payment_schedules_request = openapi_client.PaymentSchedulesRequest() # PaymentSchedulesRequest | Accepted request types: PaymentMethodPaymentSchedulesRequest and ReferencedOrderPaymentSchedulesRequest.
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
-store_id = 'store_id_example' # str | An optional outlet ID for clients that support multiple stores in the same developer app. (optional)
 
 try:
     # Update a gateway payment schedule.
-    api_response = api_instance.update_payment_schedule(content_type, client_request_id, api_key, timestamp, order_id, payment_schedules_request, message_signature=message_signature, region=region, store_id=store_id)
+    api_response = api_instance.update_payment_schedule(content_type, client_request_id, api_key, timestamp, order_id, payment_schedules_request, message_signature=message_signature, region=region)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentSchedulesApi->update_payment_schedule: %s\n" % e)
@@ -241,7 +278,6 @@ Name | Type | Description  | Notes
  **payment_schedules_request** | [**PaymentSchedulesRequest**](PaymentSchedulesRequest.md)| Accepted request types: PaymentMethodPaymentSchedulesRequest and ReferencedOrderPaymentSchedulesRequest. | 
  **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | [optional] 
  **region** | **str**| Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. | [optional] 
- **store_id** | **str**| An optional outlet ID for clients that support multiple stores in the same developer app. | [optional] 
 
 ### Return type
 
@@ -255,6 +291,17 @@ No authorization required
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**409** | There was a problem communicating with the endpoint. |  -  |
+**422** | There was a problem communicating with the endpoint. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

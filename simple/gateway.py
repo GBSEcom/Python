@@ -186,7 +186,7 @@ class Gateway:
 			region=region
 		)
 
-	def update_payment_schedule(self, order_id, payload, store_id='', region=''):
+	def update_payment_schedule(self, order_id, payload, region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign(payload)
 		return self.payment_schedules_api.update_payment_schedule(
@@ -197,7 +197,6 @@ class Gateway:
 			order_id,
 			payload,
 			message_signature=message_signature,
-			store_id=store_id,
 			region=region
 		)
 
