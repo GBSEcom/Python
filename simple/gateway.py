@@ -170,6 +170,32 @@ class Gateway:
 			payload,
 			message_signature=message_signature,
 			region=region
+		)
+
+	def fraud_client_registration_post(self, payload, region=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign(payload)
+		return self.fraud_detect_api.fraud_client_registration_post(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			payload,
+			message_signature=message_signature,
+			region=region
+		)
+
+	def fraud_payment_registration_post(self, payload, region=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign(payload)
+		return self.fraud_detect_api.fraud_payment_registration_post(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			payload,
+			message_signature=message_signature,
+			region=region
 		)	
 
 	# Payment Schedules API
@@ -270,6 +296,41 @@ class Gateway:
 			payload,
 			message_signature=message_signature,
 			region=region
+		)
+
+	def delete_payment_url(self, region='', store_id='',transaction_id='', order_id="", payment_url_id='', transaction_time=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign()
+		return self.payment_url_api.delete_payment_url(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			message_signature=message_signature,
+			region=region,
+			store_id=store_id,
+			transaction_id=transaction_id,
+			order_id=order_id,
+			payment_url_id=payment_url_id,
+			transaction_time=transaction_time
+		)
+
+	def detail_payment_url(self, from_date, to_date, region='', store_id='', transaction_id='', order_id='', status=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign()
+		return self.payment_url_api.payment_url_detail(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			from_date,
+			to_date,
+			message_signature=message_signature,
+			region=region,
+			store_id=store_id,
+			merchant_transaction_id=transaction_id,
+			order_id=order_id,
+			status=status
 		)
 
 	# Card Info Lookup API

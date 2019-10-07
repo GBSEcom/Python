@@ -7,12 +7,10 @@ Name | Type | Description | Notes
 **api_trace_id** | **str** | Request identifier in API, can be used to request logs from the support team. | [optional] 
 **response_type** | [**ResponseType**](ResponseType.md) |  | [optional] 
 **order_id** | **str** | Client order ID if supplied by client, otherwise the order ID. | [optional] 
-**transaction_time** | **int** | The transaction time in seconds since epoch. | [optional] 
 **billing** | [**Billing**](Billing.md) |  | [optional] 
 **shipping** | [**Shipping**](Shipping.md) |  | [optional] 
-**mandate** | [**SepaMandate**](SepaMandate.md) |  | [optional] 
-**transactions** | [**list[Transaction]**](Transaction.md) | Required for some payment methods (for example, Klarna). | [optional] 
-**processor** | [**ProcessorData**](ProcessorData.md) |  | [optional] 
+**transactions** | [**list[TransactionResponse]**](TransactionResponse.md) | Required for some payment methods (for example, Klarna). | [optional] 
+**additional_details** | [**AdditionalDetails**](AdditionalDetails.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

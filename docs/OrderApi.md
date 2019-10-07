@@ -24,7 +24,7 @@ import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
+# Create an instance of the API class
 api_instance = openapi_client.OrderApi()
 content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
@@ -98,7 +98,7 @@ import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
+# Create an instance of the API class
 api_instance = openapi_client.OrderApi()
 content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
@@ -152,7 +152,7 @@ No authorization required
 **403** | The request was unauthorized. |  -  |
 **404** | The requested resource doesn&#39;t exist. |  -  |
 **409** | The attempted action is not valid according to gateway rules. For example, the merchant is not set-up or the order already exists. |  -  |
-**422** | The endpoint declined the transaction. |  -  |
+**422** | The processor declined the transaction. |  -  |
 **500** | An unexpected internal server error occurred. |  -  |
 **502** | There was a problem communicating with the endpoint. |  -  |
 

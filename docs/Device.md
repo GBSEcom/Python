@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **device_type** | **str** | Defines the type of this object. | 
 **device_id** | **str** | The unique ID of the device. Must be unique for the entire system (not just within a specific merchant or industry). | 
-**networks** | [**list[DeviceNetworks]**](DeviceNetworks.md) | Information about the networks associated with the device. | [optional] 
+**networks** | [**list[Items]**](Items.md) | Information about the networks associated with the device. | [optional] 
 **latitude** | **float** | The GPS decimal latitude, ranging from (-90.0 to 90.0) where positive numbers indicate locations North of the equator. | [optional] 
 **longitude** | **float** | The GPS decimal longitude, ranging from (-180.0 to 180.0) where positive numbers indicate locations East of the IERS Reference Meridian. | [optional] 
 **imei** | **str** | The device&#39;s International Mobile Equipment Identity (IMEI) as described in IETF RFC7254. | [optional] 

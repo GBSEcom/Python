@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **value** | **str** | Client-supplied payment token value. | 
+**token_origin_store_id** | **str** | The ID of a same store (or) sibling store in a hierarchy for which the token was originally created. | [optional] 
 **function** | [**CardFunction**](CardFunction.md) |  | [optional] 
 **security_code** | **str** | Card verification value/number. | [optional] 
 
