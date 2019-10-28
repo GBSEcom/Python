@@ -35,7 +35,6 @@ import openapi_client
 import simple
 from simple import MerchantCredentials
 from simple import Gateway
-from simple import ObjectBuilder
 from openapi_client.rest import ApiException
 from pprint import pprint
 
@@ -45,26 +44,29 @@ api_secret = "Your API Secret here"
 credentials = MerchantCredentials(api_key, api_secret)
 
 gateway = Gateway.create(credentials)
+api_client = openapi_client.ApiClient()
 
-json_payload = 	"""{ 
-			\"amount\":{
-					\"currency\":\"USD\",
-					\"total\":\"12.10\"
-				},
-				\"paymentMethod\":{
-					\"paymentCard\":{
-						\"expiryDate\":{
-							\"month\":\"12\",
-							\"year\":\"21\"
-						},
-						\"number\":\"4111111111111111\"
+json_payload = 	"""{
+					\"requestType\": \"PaymentCardSaleTransaction\",
+					\"transactionAmount\": {
+						\"total\": \"25.01\",
+						"currency": "USD"
 					},
-					\"type\":\"PAYMENT_CARD\"
-				},
-				\"transactionType\":\"SALE\"
-			}"""
+					\"paymentMethod\": {
+						\"paymentCard\": {
+							\"number\": \"4012000033330026\",
+							\"expiryDate\": {
+								\"month\": \"12\",
+								\"year\": \"25\"
+							},
+							\"securityCode\": \"977\",
+						}
+					}
+				}"""
 
-payload = ObjectBuilder.build("PrimaryTransaction", json_payload)
+obj_name = "PaymentCardSaleTransaction"
+obj_model = getattr(openapi_client, obj_name)
+payload = api_client.build_object(payload, obj_model)
 
 result = gateway.primary_payment_transaction(payload)
 pprint(result)
