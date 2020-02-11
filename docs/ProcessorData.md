@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **avs_response** | [**AVSResponse**](AVSResponse.md) |  | [optional] 
 **security_code_response** | **str** | Code returned for CVV. | [optional] 
 **merchant_advice_code_indicator** | **str** | Code to map merchant advice code to ISO specification. | [optional] 
+**response_indicator** | **str** | Indicates whether the transaction was routed through the payment card&#39;s own network or through a different network. | [optional] 
+**debit_receipt_number** | **str** | Receipt number from debit network provider. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

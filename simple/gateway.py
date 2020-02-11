@@ -16,8 +16,8 @@ class Gateway:
 	CONTENT_TYPE = 'application/json'
 
 	@staticmethod
-	def create(creds):
-		return Gateway(ClientContext(creds))
+	def create(creds, env="CERT"):
+		return Gateway(ClientContext(creds, env))
 
 	def __init__(self, context):
 		self.context = context

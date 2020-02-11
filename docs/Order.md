@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **installment_options** | [**InstallmentOptions**](InstallmentOptions.md) |  | [optional] 
 **soft_descriptor** | [**SoftDescriptor**](SoftDescriptor.md) |  | [optional] 
 **additional_details** | [**AdditionalDetails**](AdditionalDetails.md) |  | [optional] 
+**bancontact_qr** | [**BancontactQR**](BancontactQR.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
