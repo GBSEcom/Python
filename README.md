@@ -1,4 +1,7 @@
 # openapi-client# First Data Gateway
+Payment Gateway API Specification.
+- API version: 6.9.1
+
 ## Requirements
 
 Python 2.7 and 3.4+
