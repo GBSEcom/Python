@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_payment_token**](PaymentTokenApi.md#create_payment_token) | **POST** /payment-tokens | Create a payment token from a payment card.
 [**delete_payment_token**](PaymentTokenApi.md#delete_payment_token) | **DELETE** /payment-tokens/{token-id} | Delete a payment token.
+[**get_payment_token_details**](PaymentTokenApi.md#get_payment_token_details) | **GET** /payment-tokens/{token-id} | Get payment card details associated with token.
 
 
 # **create_payment_token**
@@ -116,6 +117,80 @@ try:
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentTokenApi->delete_payment_token: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **content_type** | **str**| Content type. | [default to &#39;application/json&#39;]
+ **client_request_id** | **str**| A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. | 
+ **api_key** | **str**| Key given to merchant after boarding associating their requests with the appropriate app in Apigee. | 
+ **timestamp** | **int**| Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). | 
+ **token_id** | **str**| Identifies a payment token. | 
+ **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | [optional] 
+ **authorization** | **str**| The access token previously generated with the access-tokens call. Use the format &#39;Bearer {access-token}&#39;. | [optional] 
+ **region** | **str**| Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. | [optional] 
+ **store_id** | **str**|  | [optional] 
+
+### Return type
+
+[**PaymentTokenizationResponse**](PaymentTokenizationResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success response. |  -  |
+**400** | The request cannot be validated. |  -  |
+**401** | The request was unauthorized. |  -  |
+**404** | The requested resource doesn&#39;t exist. |  -  |
+**500** | An unexpected internal server error occurred. |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_payment_token_details**
+> PaymentTokenizationResponse get_payment_token_details(content_type, client_request_id, api_key, timestamp, token_id, message_signature=message_signature, authorization=authorization, region=region, store_id=store_id)
+
+Get payment card details associated with token.
+
+Get payment card details associated with token.
+
+### Example
+
+```python
+from __future__ import print_function
+import time
+import openapi_client
+from openapi_client.rest import ApiException
+from pprint import pprint
+
+# Create an instance of the API class
+api_instance = openapi_client.PaymentTokenApi()
+content_type = 'application/json' # str | Content type. (default to 'application/json')
+client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
+api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
+timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
+token_id = 'token_id_example' # str | Identifies a payment token.
+message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
+authorization = 'authorization_example' # str | The access token previously generated with the access-tokens call. Use the format 'Bearer {access-token}'. (optional)
+region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
+store_id = 'store_id_example' # str |  (optional)
+
+try:
+    # Get payment card details associated with token.
+    api_response = api_instance.get_payment_token_details(content_type, client_request_id, api_key, timestamp, token_id, message_signature=message_signature, authorization=authorization, region=region, store_id=store_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PaymentTokenApi->get_payment_token_details: %s\n" % e)
 ```
 
 ### Parameters

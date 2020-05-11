@@ -3,9 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access_token** | **str** | Access token for authentication. | [optional] 
+**token_id** | **str** | Access token for authentication. | [optional] 
+**status** | **str** | The token status. | [optional] 
+**issued_on** | **str** | Access token issued time in milliseconds. | [optional] 
+**expires_in_seconds** | **str** | Access token expiration time. | [optional] 
+**public_key_base64** | **str** | Public key to encrypt data. | [optional] 
+**algorithm** | **str** | Encyption algorithym. One way ECDH 256 bit key. | [optional] 
 **client_request_id** | **str** | Echoes back the value from the request header for tracking. | [optional] 
-**request_status** | **str** | The result of the requested operation. If this is anything other than &#39;SUCCESS&#39;, please refer to the 400s HTTP error codes. See ErrorResponse object for details. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

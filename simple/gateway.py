@@ -33,14 +33,15 @@ class Gateway:
 		self.card_info_lookup_api = CardInfoLookupApi()
 
 	# Authentication API
-	def request_access_token(self):
+	def request_access_token(self, payload):
 		signature_service = self.get_signature_service()
-		message_signature = signature_service.sign()
+		message_signature = signature_service.sign(payload)
 		return self.authentication_api.authentication_access_tokens_post(
 			self.CONTENT_TYPE,
 			signature_service.client_request_id,
 			self.get_api_key(),
 			signature_service.timestamp,
+			payload,
 			message_signature=message_signature
 		)
 
@@ -266,6 +267,21 @@ class Gateway:
 			payload,
 			message_signature=message_signature,
 			authorization=authorization,
+			region=region
+		)
+
+	def payment_token_inquiry(self, token_id, authorization='', store_id='', region=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign()
+		return self.payment_token_api.get_payment_token_details(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			token_id,
+			message_signature=message_signature,
+			authorization=authorization,
+			store_id=store_id,
 			region=region
 		)
 

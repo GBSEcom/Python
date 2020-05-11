@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **transaction_state** | **str** | The state of the transaction. | [optional] 
 **secure3d_response** | [**Secure3dResponse**](Secure3dResponse.md) |  | [optional] 
 **redirect_url** | **str** | The endpoint redirection URL. | [optional] 
-**authentication_redirect** | [**AuthenticationRedirect**](AuthenticationRedirect.md) |  | [optional] 
+**authentication_response** | [**Secure3DAuthenticationResponse**](Secure3DAuthenticationResponse.md) |  | [optional] 
 **scheme_transaction_id** | **str** | The transaction ID received from schemes for the initial transaction of card on file flows. | [optional] 
 **processor** | [**ProcessorData**](ProcessorData.md) |  | [optional] 
 **additional_details** | [**AdditionalTransactionDetails**](AdditionalTransactionDetails.md) |  | [optional] 

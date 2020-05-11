@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **authentication_access_tokens_post**
-> AccessTokenResponse authentication_access_tokens_post(content_type, client_request_id, api_key, timestamp, message_signature=message_signature)
+> AccessTokenResponse authentication_access_tokens_post(content_type, client_request_id, api_key, timestamp, access_token_request, message_signature=message_signature)
 
 Generate an access token for user authentication.
 
@@ -29,11 +29,12 @@ content_type = 'application/json' # str | Content type. (default to 'application
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
+access_token_request = openapi_client.AccessTokenRequest() # AccessTokenRequest | Access token request
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 
 try:
     # Generate an access token for user authentication.
-    api_response = api_instance.authentication_access_tokens_post(content_type, client_request_id, api_key, timestamp, message_signature=message_signature)
+    api_response = api_instance.authentication_access_tokens_post(content_type, client_request_id, api_key, timestamp, access_token_request, message_signature=message_signature)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AuthenticationApi->authentication_access_tokens_post: %s\n" % e)
@@ -47,6 +48,7 @@ Name | Type | Description  | Notes
  **client_request_id** | **str**| A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format. | 
  **api_key** | **str**| Key given to merchant after boarding associating their requests with the appropriate app in Apigee. | 
  **timestamp** | **int**| Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins). | 
+ **access_token_request** | [**AccessTokenRequest**](AccessTokenRequest.md)| Access token request | 
  **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | [optional] 
 
 ### Return type
@@ -59,7 +61,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
