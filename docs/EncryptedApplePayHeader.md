@@ -1,5 +1,6 @@
 # EncryptedApplePayHeader
 
+Additional version-dependent information used to decrypt and verify the payment.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

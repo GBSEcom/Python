@@ -1,5 +1,6 @@
 # IndustrySpecificExtensions
 
+Industry-specific information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

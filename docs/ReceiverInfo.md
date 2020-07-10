@@ -1,5 +1,6 @@
 # ReceiverInfo
 
+Receiver information for a funding transaction.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

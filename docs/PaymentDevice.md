@@ -1,5 +1,6 @@
 # PaymentDevice
 
+Information from the payment device including the blob data and its mode of entry.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

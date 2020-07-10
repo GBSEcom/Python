@@ -1,5 +1,6 @@
 # OrderResponse
 
+Common object for primary and secondary payment request responses.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

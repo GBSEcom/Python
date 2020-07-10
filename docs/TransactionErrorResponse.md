@@ -1,5 +1,6 @@
 # TransactionErrorResponse
 
+Transaction response with error field included.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -14,11 +15,12 @@ Name | Type | Description | Notes
 **payment_method_details** | [**PaymentMethodDetails**](PaymentMethodDetails.md) |  | [optional] 
 **country** | **str** | Country of the card issuer. | [optional] 
 **terminal_id** | **str** | The terminal that is processing the transaction. | [optional] 
+**merchant_id** | **str** | The unique (on Acquirer level) mechant ID. Usually this value has been chosen from the merchant itself and will be used in communication with the endpoint. | [optional] 
 **merchant_transaction_id** | **str** | The unique merchant transaction ID from the request header, if supplied. | [optional] 
 **transaction_time** | **int** | The transaction time in seconds since epoch. | [optional] 
 **approved_amount** | [**Amount**](Amount.md) |  | [optional] 
-**transaction_status** | **str** | The status of the transaction. APPROVED/WAITING are returned by the endpoints.  VALIDATION_FAILED/DECLINED are errors. See ErrorResponse object for details. | [optional] 
-**transaction_state** | **str** | The state of the transaction. | [optional] 
+**transaction_status** | **str** | Represents the status of a transaction immediately following the original processing request. This value is not stored for the transaction and is only available in the response when the transaction is processed. TransactionStatus is not returned on either the transaction inquiry or on the order inquiry. | [optional] 
+**transaction_state** | **str** | Shows the state of the current transaction. | [optional] 
 **secure3d_response** | [**Secure3dResponse**](Secure3dResponse.md) |  | [optional] 
 **redirect_url** | **str** | The endpoint redirection URL. | [optional] 
 **authentication_response** | [**Secure3DAuthenticationResponse**](Secure3DAuthenticationResponse.md) |  | [optional] 
@@ -26,6 +28,7 @@ Name | Type | Description | Notes
 **processor** | [**ProcessorData**](ProcessorData.md) |  | [optional] 
 **additional_details** | [**AdditionalTransactionDetails**](AdditionalTransactionDetails.md) |  | [optional] 
 **account_updater_response** | [**AccountUpdaterResponse**](AccountUpdaterResponse.md) |  | [optional] 
+**ach_response** | [**AchResponse**](AchResponse.md) |  | [optional] 
 **error** | [**Error**](Error.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

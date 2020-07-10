@@ -1,5 +1,6 @@
 # Secure3DAuthenticationResponse
 
+Encapsulates 3DS authentication details in transaction responses.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

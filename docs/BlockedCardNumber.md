@@ -1,5 +1,6 @@
 # BlockedCardNumber
 
+Object that holds information about blocked card numbers.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

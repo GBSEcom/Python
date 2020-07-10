@@ -1,5 +1,6 @@
 # FraudSettingsResponse
 
+Response from fraud settings request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

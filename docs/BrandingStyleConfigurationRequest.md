@@ -1,5 +1,6 @@
 # BrandingStyleConfigurationRequest
 
+Request to update branding style properties for store.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

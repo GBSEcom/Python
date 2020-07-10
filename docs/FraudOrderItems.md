@@ -1,5 +1,6 @@
 # FraudOrderItems
 
+Product details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

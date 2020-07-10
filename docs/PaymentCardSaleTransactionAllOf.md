@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**request_type** | **str** |  | [optional] 
 **payment_method** | [**PaymentCardPaymentMethod**](PaymentCardPaymentMethod.md) |  | 
 **stored_credentials** | [**StoredCredential**](StoredCredential.md) |  | [optional] 
 **settlement_split** | [**list[SubMerchantSplit]**](SubMerchantSplit.md) | Settle with multiple sub-merchants, sale and preAuth only. | [optional] 

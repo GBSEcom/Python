@@ -1,5 +1,6 @@
 # Lodging
 
+Additional data specific to the lodging/hotel industry.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

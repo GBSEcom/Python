@@ -1,5 +1,6 @@
 # BasicResponse
 
+Contains apiTraceId and clientRequestId shared in all response types.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # ConnectMode
 
+The type of connect mode.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

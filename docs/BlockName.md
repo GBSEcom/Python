@@ -1,5 +1,6 @@
 # BlockName
 
+Object that holds information about name that should be blocked.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

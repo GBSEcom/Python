@@ -1,5 +1,6 @@
 # FraudAddress
 
+Address fields.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

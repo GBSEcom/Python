@@ -1,5 +1,6 @@
 # AliPayPaymentMethod
 
+Payment method containing AliPay information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

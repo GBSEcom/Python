@@ -1,5 +1,6 @@
 # PurchaseCardsLevel3
 
+Level 3 data for monitoring and controlling corporate expenditures.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # CardVerificationRequest
 
+Request to verify card validity.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

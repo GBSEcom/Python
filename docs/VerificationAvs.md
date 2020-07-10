@@ -1,5 +1,6 @@
 # VerificationAvs
 
+The result of the AVS (Address Verification System) check.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

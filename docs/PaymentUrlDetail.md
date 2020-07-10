@@ -1,5 +1,6 @@
 # PaymentUrlDetail
 
+Detailed information about a payment URL.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

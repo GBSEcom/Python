@@ -1,5 +1,6 @@
 # Disbursement
 
+Disbursement information. Abstract class, do not use this class directly, use one of its children: FundingTransactionType, DisbursementTransactionType.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

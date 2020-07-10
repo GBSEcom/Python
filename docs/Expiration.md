@@ -1,5 +1,6 @@
 # Expiration
 
+Required for normal transactions except for payment with 'RECURRING' flags.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

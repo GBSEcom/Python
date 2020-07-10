@@ -1,5 +1,6 @@
 # AdditionalTransactionDetails
 
+Additional transaction details for transaction response.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

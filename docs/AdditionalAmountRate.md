@@ -1,5 +1,6 @@
 # AdditionalAmountRate
 
+Rate and corresponding amount being applied to purchase cards, for instance in the form of taxes or discounts.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

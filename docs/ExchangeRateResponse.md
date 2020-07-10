@@ -1,5 +1,6 @@
 # ExchangeRateResponse
 
+Exchange rate response.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

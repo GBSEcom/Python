@@ -1,5 +1,6 @@
 # CurrencyConversion
 
+Currency conversion. Abstract class, do not use this class directly, use one of its children: Dcc, DynamicPricing.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

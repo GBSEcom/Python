@@ -1,5 +1,6 @@
 # EncryptedSamsungPay
 
+Encrypted Samsung Pay payload.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

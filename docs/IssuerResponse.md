@@ -1,5 +1,6 @@
 # IssuerResponse
 
+The issuers response to the payment request. This field should be filled in when the message has already passed through the issuer (e.g. post-authorization).
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

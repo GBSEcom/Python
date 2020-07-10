@@ -1,5 +1,6 @@
 # TokenIdentifier
 
+Token identifier object.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

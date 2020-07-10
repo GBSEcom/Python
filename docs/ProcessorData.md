@@ -1,5 +1,6 @@
 # ProcessorData
 
+Model for processor data.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

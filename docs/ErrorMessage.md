@@ -1,5 +1,6 @@
 # ErrorMessage
 
+Error message.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

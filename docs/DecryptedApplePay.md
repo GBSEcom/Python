@@ -1,5 +1,6 @@
 # DecryptedApplePay
 
+Decrypted Apple Pay payload.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

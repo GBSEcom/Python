@@ -1,5 +1,6 @@
 # BlockDomain
 
+Object that holds information about domain that should be blocked.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

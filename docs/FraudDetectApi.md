@@ -24,10 +24,18 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to https://cert.api.firstdata.com/gateway/v2
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "https://cert.api.firstdata.com/gateway/v2"
+)
 
-# Create an instance of the API class
-api_instance = openapi_client.FraudDetectApi()
-content_type = 'application/json' # str | Content type. (default to 'application/json')
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.FraudDetectApi(api_client)
+    content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
@@ -35,12 +43,12 @@ client_registration = openapi_client.ClientRegistration() # ClientRegistration |
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
 
-try:
-    # Client registration for fraud detect transaction.
-    api_response = api_instance.fraud_client_registration_post(content_type, client_request_id, api_key, timestamp, client_registration, message_signature=message_signature, region=region)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling FraudDetectApi->fraud_client_registration_post: %s\n" % e)
+    try:
+        # Client registration for fraud detect transaction.
+        api_response = api_instance.fraud_client_registration_post(content_type, client_request_id, api_key, timestamp, client_registration, message_signature=message_signature, region=region)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling FraudDetectApi->fraud_client_registration_post: %s\n" % e)
 ```
 
 ### Parameters
@@ -91,10 +99,18 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to https://cert.api.firstdata.com/gateway/v2
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "https://cert.api.firstdata.com/gateway/v2"
+)
 
-# Create an instance of the API class
-api_instance = openapi_client.FraudDetectApi()
-content_type = 'application/json' # str | Content type. (default to 'application/json')
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.FraudDetectApi(api_client)
+    content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
@@ -102,12 +118,12 @@ payment_registration = openapi_client.PaymentRegistration() # PaymentRegistratio
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
 
-try:
-    # Payment registration for fraud detect transaction.
-    api_response = api_instance.fraud_payment_registration_post(content_type, client_request_id, api_key, timestamp, payment_registration, message_signature=message_signature, region=region)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling FraudDetectApi->fraud_payment_registration_post: %s\n" % e)
+    try:
+        # Payment registration for fraud detect transaction.
+        api_response = api_instance.fraud_payment_registration_post(content_type, client_request_id, api_key, timestamp, payment_registration, message_signature=message_signature, region=region)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling FraudDetectApi->fraud_payment_registration_post: %s\n" % e)
 ```
 
 ### Parameters
@@ -158,10 +174,18 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to https://cert.api.firstdata.com/gateway/v2
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "https://cert.api.firstdata.com/gateway/v2"
+)
 
-# Create an instance of the API class
-api_instance = openapi_client.FraudDetectApi()
-content_type = 'application/json' # str | Content type. (default to 'application/json')
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.FraudDetectApi(api_client)
+    content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
@@ -169,12 +193,12 @@ score_only_request = openapi_client.ScoreOnlyRequest() # ScoreOnlyRequest | Acce
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
 
-try:
-    # Score a transaction for fraud.
-    api_response = api_instance.score_only(content_type, client_request_id, api_key, timestamp, score_only_request, message_signature=message_signature, region=region)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling FraudDetectApi->score_only: %s\n" % e)
+    try:
+        # Score a transaction for fraud.
+        api_response = api_instance.score_only(content_type, client_request_id, api_key, timestamp, score_only_request, message_signature=message_signature, region=region)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling FraudDetectApi->score_only: %s\n" % e)
 ```
 
 ### Parameters

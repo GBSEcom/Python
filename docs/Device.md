@@ -1,5 +1,6 @@
 # Device
 
+The device where this transaction originated.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

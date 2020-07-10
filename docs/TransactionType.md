@@ -1,5 +1,6 @@
 # TransactionType
 
+Type of transaction to perform. Primary transaction types in requests include 'SALE', 'PREAUTH', 'CREDIT' and 'FORCED_TICKET'.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

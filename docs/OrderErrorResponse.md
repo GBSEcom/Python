@@ -1,5 +1,6 @@
 # OrderErrorResponse
 
+Order response with error field included.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

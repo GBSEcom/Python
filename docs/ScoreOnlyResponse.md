@@ -1,5 +1,6 @@
 # ScoreOnlyResponse
 
+Fraud detect response.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

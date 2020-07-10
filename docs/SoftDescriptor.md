@@ -1,5 +1,6 @@
 # SoftDescriptor
 
+Identifying information about a merchant which appears on buyer's credit/debit card statements.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

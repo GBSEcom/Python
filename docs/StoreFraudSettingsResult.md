@@ -1,5 +1,6 @@
 # StoreFraudSettingsResult
 
+Object that holds result from update fraud settings request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

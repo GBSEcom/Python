@@ -1,5 +1,6 @@
 # MaximumPurchaseAmount
 
+Object that holds information about maximum purchase amount limit.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

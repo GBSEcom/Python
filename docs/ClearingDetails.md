@@ -1,5 +1,6 @@
 # ClearingDetails
 
+Contains clearing related response information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

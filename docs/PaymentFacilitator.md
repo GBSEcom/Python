@@ -1,5 +1,6 @@
 # PaymentFacilitator
 
+Payment facilitator details provided by the merchant.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

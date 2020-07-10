@@ -1,5 +1,6 @@
 # SubMerchantData
 
+Once sub-merchant element is given, the transaction is considered to be a sub-merchant transaction.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

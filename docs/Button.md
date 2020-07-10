@@ -1,5 +1,6 @@
 # Button
 
+Object contains button style properties.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

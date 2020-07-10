@@ -1,5 +1,6 @@
 # ChinaDomestic
 
+The payment object for China-domestic transactions. Use this to populate all china domestic payment method details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

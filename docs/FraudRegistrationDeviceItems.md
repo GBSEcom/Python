@@ -1,5 +1,6 @@
 # FraudRegistrationDeviceItems
 
+Network information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

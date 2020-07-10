@@ -1,5 +1,6 @@
 # FontWeight
 
+Font weight property.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # AuthenticationResult
 
+Submit the result of 3DS authentication managed outside of the gateway. An AuthenticationResult should not be submitted within the same request as an AuthenticationRequest. Abstract class, do not use this class directly, use one of its children.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

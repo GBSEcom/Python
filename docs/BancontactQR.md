@@ -1,5 +1,6 @@
 # BancontactQR
 
+Bancontact QR information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

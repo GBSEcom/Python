@@ -1,5 +1,6 @@
 # EncryptedGooglePayData
 
+The encrypted wallet payload.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

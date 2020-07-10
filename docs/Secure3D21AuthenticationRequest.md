@@ -1,8 +1,10 @@
 # Secure3D21AuthenticationRequest
 
+Request authentication of the payment card using the 3DS 2.x URL redirect scheme.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**authentication_type** | **str** | Indicates what kind of authentication scheme the merchant wants to use on the card. | 
 **term_url** | **str** | The result of the authentication will be sent to this URL. If not provided, a term URL will be dynamically generated. | [optional] 
 **method_notification_url** | **str** | The 3DS method iframe and transaction ID will be sent here. | [optional] 
 **challenge_indicator** | **str** | Indicates whether or not a challenge should be performed. 01 &#x3D; No preference (You have no preference whether a challenge should be performed. This is the default value) 02 &#x3D; No challenge requested (You prefer that no challenge should be performed) 03 &#x3D; Challenge requested: 3DS Requestor Preference (You prefer that a challenge should be performed) 04 &#x3D; Challenge requested: Mandate (There are local or regional mandates that mean that a challenge must be performed)  | [optional] [default to '01']

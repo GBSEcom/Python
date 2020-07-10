@@ -1,5 +1,6 @@
 # PaymentMethodDetails
 
+Provides details of the payment method used.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

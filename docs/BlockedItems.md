@@ -1,5 +1,6 @@
 # BlockedItems
 
+Object that holds information about items that should be blocked.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

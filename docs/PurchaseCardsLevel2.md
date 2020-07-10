@@ -1,5 +1,6 @@
 # PurchaseCardsLevel2
 
+Level 2 data for monitoring and controlling corporate expenditures.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

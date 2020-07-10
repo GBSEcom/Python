@@ -1,5 +1,6 @@
 # DecryptedGooglePay
 
+Decrypted Google Pay payload.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

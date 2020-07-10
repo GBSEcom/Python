@@ -1,5 +1,6 @@
 # Items
 
+Network information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

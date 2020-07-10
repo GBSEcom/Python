@@ -1,5 +1,6 @@
 # CardInfoLookupRequest
 
+Request to look up card-related information such as issuer country, card function and card brand.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -24,10 +24,18 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to https://cert.api.firstdata.com/gateway/v2
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "https://cert.api.firstdata.com/gateway/v2"
+)
 
-# Create an instance of the API class
-api_instance = openapi_client.PaymentURLApi()
-content_type = 'application/json' # str | Content type. (default to 'application/json')
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.PaymentURLApi(api_client)
+    content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
@@ -35,12 +43,12 @@ payment_url_request = openapi_client.PaymentUrlRequest() # PaymentUrlRequest | A
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
 
-try:
-    # Create a payment URL.
-    api_response = api_instance.create_payment_url(content_type, client_request_id, api_key, timestamp, payment_url_request, message_signature=message_signature, region=region)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PaymentURLApi->create_payment_url: %s\n" % e)
+    try:
+        # Create a payment URL.
+        api_response = api_instance.create_payment_url(content_type, client_request_id, api_key, timestamp, payment_url_request, message_signature=message_signature, region=region)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PaymentURLApi->create_payment_url: %s\n" % e)
 ```
 
 ### Parameters
@@ -96,27 +104,35 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to https://cert.api.firstdata.com/gateway/v2
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "https://cert.api.firstdata.com/gateway/v2"
+)
 
-# Create an instance of the API class
-api_instance = openapi_client.PaymentURLApi()
-content_type = 'application/json' # str | Content type. (default to 'application/json')
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.PaymentURLApi(api_client)
+    content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
 message_signature = 'message_signature_example' # str | Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. (optional)
 region = 'region_example' # str | Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. (optional)
 store_id = 'store_id_example' # str | An optional outlet ID for clients that support multiple stores in the same developer app. (optional)
-transaction_id = 'transaction_id_example' # str | Gateway transaction identifier as returned in the parameter ipgTransactionId. (optional)
+transaction_id = 'transaction_id_example' # str | Gateway transaction identifier as returned in the parameter ipgTransactionId or merchantTransactionId. (optional)
 order_id = 'order_id_example' # str | Gateway order identifier as returned in the parameter orderId. (optional)
 payment_url_id = 'payment_url_id_example' # str | The ID code from the payment URL. (optional)
 transaction_time = 'transaction_time_example' # str | The transaction time in seconds since epoch. (optional)
 
-try:
-    # Delete a payment URL.
-    api_response = api_instance.delete_payment_url(content_type, client_request_id, api_key, timestamp, message_signature=message_signature, region=region, store_id=store_id, transaction_id=transaction_id, order_id=order_id, payment_url_id=payment_url_id, transaction_time=transaction_time)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PaymentURLApi->delete_payment_url: %s\n" % e)
+    try:
+        # Delete a payment URL.
+        api_response = api_instance.delete_payment_url(content_type, client_request_id, api_key, timestamp, message_signature=message_signature, region=region, store_id=store_id, transaction_id=transaction_id, order_id=order_id, payment_url_id=payment_url_id, transaction_time=transaction_time)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PaymentURLApi->delete_payment_url: %s\n" % e)
 ```
 
 ### Parameters
@@ -130,7 +146,7 @@ Name | Type | Description  | Notes
  **message_signature** | **str**| Used to ensure the request has not been tampered with during transmission. The Message-Signature is the Base64 encoded HMAC hash (SHA256 algorithm with the API Secret as the key.) For more information, refer to the supporting documentation on the Developer Portal. | [optional] 
  **region** | **str**| Indicates the region where the client wants the transaction to be processed. This will override the default processing region identified for the client. Available options are argentina, brazil, germany, india and northamerica. Region specific store setup and APIGEE boarding is required in order to use an alternate region for processing. | [optional] 
  **store_id** | **str**| An optional outlet ID for clients that support multiple stores in the same developer app. | [optional] 
- **transaction_id** | **str**| Gateway transaction identifier as returned in the parameter ipgTransactionId. | [optional] 
+ **transaction_id** | **str**| Gateway transaction identifier as returned in the parameter ipgTransactionId or merchantTransactionId. | [optional] 
  **order_id** | **str**| Gateway order identifier as returned in the parameter orderId. | [optional] 
  **payment_url_id** | **str**| The ID code from the payment URL. | [optional] 
  **transaction_time** | **str**| The transaction time in seconds since epoch. | [optional] 
@@ -176,10 +192,18 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to https://cert.api.firstdata.com/gateway/v2
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "https://cert.api.firstdata.com/gateway/v2"
+)
 
-# Create an instance of the API class
-api_instance = openapi_client.PaymentURLApi()
-content_type = 'application/json' # str | Content type. (default to 'application/json')
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.PaymentURLApi(api_client)
+    content_type = 'application/json' # str | Content type. (default to 'application/json')
 client_request_id = 'client_request_id_example' # str | A client-generated ID for request tracking and signature creation, unique per request.  This is also used for idempotency control. We recommend 128-bit UUID format.
 api_key = 'api_key_example' # str | Key given to merchant after boarding associating their requests with the appropriate app in Apigee.
 timestamp = 56 # int | Epoch timestamp in milliseconds in the request from a client system. Used for Message Signature generation and time limit (5 mins).
@@ -192,12 +216,12 @@ order_id = 'order_id_example' # str | Gateway order identifier as returned in th
 merchant_transaction_id = 'merchant_transaction_id_example' # str | Gateway merchant identifier as returned in the parameter merchantTransactionId. (optional)
 status = 'status_example' # str | The status of payment URL. (optional)
 
-try:
-    # Retrieve the state of payment URL.
-    api_response = api_instance.payment_url_detail(content_type, client_request_id, api_key, timestamp, from_date, to_date, message_signature=message_signature, region=region, store_id=store_id, order_id=order_id, merchant_transaction_id=merchant_transaction_id, status=status)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PaymentURLApi->payment_url_detail: %s\n" % e)
+    try:
+        # Retrieve the state of payment URL.
+        api_response = api_instance.payment_url_detail(content_type, client_request_id, api_key, timestamp, from_date, to_date, message_signature=message_signature, region=region, store_id=store_id, order_id=order_id, merchant_transaction_id=merchant_transaction_id, status=status)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PaymentURLApi->payment_url_detail: %s\n" % e)
 ```
 
 ### Parameters

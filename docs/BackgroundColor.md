@@ -1,5 +1,6 @@
 # BackgroundColor
 
+Object contains background color properties.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

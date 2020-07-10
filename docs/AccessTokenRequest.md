@@ -1,5 +1,6 @@
 # AccessTokenRequest
 
+Access token generation request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

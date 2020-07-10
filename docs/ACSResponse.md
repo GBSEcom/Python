@@ -1,5 +1,6 @@
 # ACSResponse
 
+Encapsulates response data from the ACS.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # Airline
 
+Additional data specific to the airline industry.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

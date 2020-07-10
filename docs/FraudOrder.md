@@ -1,5 +1,6 @@
 # FraudOrder
 
+The list of items included in the order.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

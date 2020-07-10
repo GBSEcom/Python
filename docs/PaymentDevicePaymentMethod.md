@@ -1,5 +1,6 @@
 # PaymentDevicePaymentMethod
 
+Payment method containing payment device information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

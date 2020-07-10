@@ -1,5 +1,6 @@
 # ResponseAmountComponents
 
+Amount component details, used in responses.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

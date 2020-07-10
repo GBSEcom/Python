@@ -1,5 +1,6 @@
 # Merchant
 
+The merchant where this transaction occurred.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -3,13 +3,13 @@ from simple.signature import Signature
 from openapi_client.api.authentication_api import AuthenticationApi
 from openapi_client.api.order_api import OrderApi
 from openapi_client.api.payment_api import PaymentApi
-from openapi_client.api.card_verification_api import CardVerificationApi
+from openapi_client.api.verification_api import VerificationApi
 from openapi_client.api.currency_conversion_api import CurrencyConversionApi
 from openapi_client.api.fraud_detect_api import FraudDetectApi
 from openapi_client.api.payment_schedules_api import PaymentSchedulesApi
 from openapi_client.api.payment_token_api import PaymentTokenApi
 from openapi_client.api.payment_url_api import PaymentURLApi
-from openapi_client.api.card_info_lookup_api import CardInfoLookupApi
+from openapi_client.api.information_lookup_api import InformationLookupApi
 
 class Gateway:
 	
@@ -24,13 +24,13 @@ class Gateway:
 		self.authentication_api = AuthenticationApi()
 	 	self.order_api = OrderApi()
 		self.payment_api = PaymentApi()
-		self.card_verification_api = CardVerificationApi()
+		self.verification_api = VerificationApi()
 		self.currency_conversion_api = CurrencyConversionApi()
 		self.fraud_detect_api = FraudDetectApi()
 		self.payment_schedules_api = PaymentSchedulesApi()
 		self.payment_token_api = PaymentTokenApi()
 		self.payment_url_api = PaymentURLApi()
-		self.card_info_lookup_api = CardInfoLookupApi()
+		self.information_lookup_api = InformationLookupApi()
 
 	# Authentication API
 	def request_access_token(self, payload):
@@ -131,11 +131,24 @@ class Gateway:
 			region=region
 		)
 
-	# Card Verification API
+	# Verification API
 	def verify_card(self, payload, region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign(payload)
-		return self.card_verification_api.verify_card(
+		return self.verification_api.verify_card(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			payload,
+			message_signature=message_signature,
+			region=region
+		)
+
+	def verify_account(self, payload, region=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign(payload)
+		return self.verification_api.verify_account(
 			self.CONTENT_TYPE,
 			signature_service.client_request_id,
 			self.get_api_key(),
@@ -270,6 +283,20 @@ class Gateway:
 			region=region
 		)
 
+	def update_payment_token(self, payload, authorization='', region=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign(payload)
+		return self.payment_token_api.update_payment_token(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			payload,
+			message_signature=message_signature,
+			authorization=authorization,
+			region=region
+		)
+
 	def payment_token_inquiry(self, token_id, authorization='', store_id='', region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign()
@@ -349,11 +376,24 @@ class Gateway:
 			status=status
 		)
 
-	# Card Info Lookup API
+	# Information Lookup API
 	def card_info_lookup(self, payload, region=''):
 		signature_service = self.get_signature_service()
 		message_signature = signature_service.sign(payload)
-		return self.card_info_lookup_api.card_info_lookup(
+		return self.information_lookup_api.card_info_lookup(
+			self.CONTENT_TYPE,
+			signature_service.client_request_id,
+			self.get_api_key(),
+			signature_service.timestamp,
+			payload,
+			message_signature=message_signature,
+			region=region
+		)
+
+	def acct_info_lookup(self, payload, region=''):
+		signature_service = self.get_signature_service()
+		message_signature = signature_service.sign(payload)
+		return self.information_lookup_api.lookup_account(
 			self.CONTENT_TYPE,
 			signature_service.client_request_id,
 			self.get_api_key(),

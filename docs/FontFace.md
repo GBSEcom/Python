@@ -1,5 +1,6 @@
 # FontFace
 
+Font face property.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

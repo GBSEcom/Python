@@ -1,5 +1,6 @@
 # SplitShipment
 
+Split-shipment related information, in order to reuse the same authorization.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

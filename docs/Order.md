@@ -1,5 +1,6 @@
 # Order
 
+Use this model to provide order related details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

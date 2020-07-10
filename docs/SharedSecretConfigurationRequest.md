@@ -1,5 +1,6 @@
 # SharedSecretConfigurationRequest
 
+Request to create or update success/fail URLs for store.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # Address
 
+Model for address information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

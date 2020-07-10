@@ -1,5 +1,6 @@
 # AccountUpdaterResponse
 
+Details related to updated account information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

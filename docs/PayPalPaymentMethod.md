@@ -1,5 +1,6 @@
 # PayPalPaymentMethod
 
+Payment method containing PayPal information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

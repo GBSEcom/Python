@@ -1,5 +1,6 @@
 # ChinaDomesticPaymentMethod
 
+Payment method containing China Domestic information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

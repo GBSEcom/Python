@@ -1,5 +1,6 @@
 # PaymentSchedulesRequest
 
+Request to create a gateway schedule. Abstract class, do not use this class directly, use one of its children.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # StoreFraudSettings
 
+Object for fraud settings.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,8 +1,10 @@
 # EncryptedSamsungPayWalletPaymentMethod
 
+Wallet payment method containing encrypted Samsung Pay information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**wallet_type** | **str** | Type of wallet. | 
 **encrypted_samsung_pay** | [**EncryptedSamsungPay**](EncryptedSamsungPay.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -1,9 +1,10 @@
 # Amount
 
+Amount of the transaction.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total** | **float** | Amount total. | 
+**total** | **float** | Sub component values must add up to total amount. | 
 **currency** | **str** | ISO 4217 currency code. | 
 **components** | [**AmountComponents**](AmountComponents.md) |  | [optional] 
 

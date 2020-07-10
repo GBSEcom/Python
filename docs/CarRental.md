@@ -1,5 +1,6 @@
 # CarRental
 
+Additional data specific to the car rental industry.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

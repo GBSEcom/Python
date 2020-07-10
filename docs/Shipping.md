@@ -1,5 +1,6 @@
 # Shipping
 
+Shipping information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

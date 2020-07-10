@@ -1,5 +1,6 @@
 # RegistrationMethod
 
+A JSON object that holds info about the payment registration method.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

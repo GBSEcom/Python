@@ -1,5 +1,6 @@
 # UsePaymentToken
 
+Payment token usage details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

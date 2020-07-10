@@ -1,5 +1,6 @@
 # FraudRegistrationCard
 
+A JSON object that holds info about the payment registration card.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
