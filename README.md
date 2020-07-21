@@ -69,7 +69,7 @@ json_payload = 	"""{
 
 obj_name = "PaymentCardSaleTransaction"
 obj_model = getattr(openapi_client, obj_name)
-payload = api_client.build_object(payload, obj_model)
+payload = api_client.build_object(json.loads(json_payload), obj_model)
 
 result = gateway.primary_payment_transaction(payload)
 pprint(result)
