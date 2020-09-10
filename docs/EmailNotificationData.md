@@ -1,6 +1,5 @@
 # EmailNotificationData
 
-Object that holds data to configure email notifications.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

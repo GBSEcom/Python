@@ -1,6 +1,5 @@
 # AccessTokenResponse
 
-Access token generation response.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

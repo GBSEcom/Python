@@ -1,6 +1,5 @@
 # PaymentUrlErrorResponse
 
-Payment URL response with error field included.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

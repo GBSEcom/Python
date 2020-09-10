@@ -1,6 +1,5 @@
 # StoreEmailSettings
 
-Object for email settings.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

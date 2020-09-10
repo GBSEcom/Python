@@ -1,6 +1,5 @@
 # CardFunction
 
-Card function. This field is required when performing transactions for Brazil merchants.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # PayPal
 
-The payment object for PayPal transactions.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

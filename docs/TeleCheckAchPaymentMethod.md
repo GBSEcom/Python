@@ -1,6 +1,5 @@
 # TeleCheckAchPaymentMethod
 
-ACH means automated clearing house. Contains properties common across TeleCheck message types. Abstract class, do not use this class directly, use one of its children.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # Payment
 
-Payment information for the transaction.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

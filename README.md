@@ -1,6 +1,6 @@
 # openapi-client# First Data Gateway
 Payment Gateway API Specification.
-- API version: 6.12.0
+- API version: 6.13.0
 
 ## Requirements
 

@@ -1,6 +1,5 @@
 # ErrorResponse
 
-Response containing an error object.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

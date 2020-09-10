@@ -1,6 +1,5 @@
 # Text
 
-Object contains text style properties.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

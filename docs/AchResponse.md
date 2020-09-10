@@ -1,6 +1,5 @@
 # AchResponse
 
-ACH TeleCheck response.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

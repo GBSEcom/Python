@@ -1,6 +1,5 @@
 # StoreUrlConfigurationRequest
 
-Request to create or update notification and success/failure URLs for store.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

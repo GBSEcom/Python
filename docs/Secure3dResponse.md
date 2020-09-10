@@ -1,6 +1,5 @@
 # Secure3dResponse
 
-Contains 3DSecure response code.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

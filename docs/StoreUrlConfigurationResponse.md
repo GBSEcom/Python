@@ -1,6 +1,5 @@
 # StoreUrlConfigurationResponse
 
-Response from a store url configuration request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

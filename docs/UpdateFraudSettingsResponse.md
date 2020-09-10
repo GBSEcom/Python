@@ -1,6 +1,5 @@
 # UpdateFraudSettingsResponse
 
-Response from update fraud settings request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

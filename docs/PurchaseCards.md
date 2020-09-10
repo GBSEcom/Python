@@ -1,6 +1,5 @@
 # PurchaseCards
 
-Purchase card details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

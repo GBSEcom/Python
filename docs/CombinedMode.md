@@ -1,6 +1,5 @@
 # CombinedMode
 
-Object contains combined mode branding style properties.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

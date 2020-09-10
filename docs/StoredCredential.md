@@ -1,6 +1,5 @@
 # StoredCredential
 
-Object for sending stored credentials.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

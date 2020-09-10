@@ -1,6 +1,5 @@
 # CreatePaymentToken
 
-Use this model to create a payment token.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

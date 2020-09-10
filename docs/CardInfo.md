@@ -1,6 +1,5 @@
 # CardInfo
 
-Card information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

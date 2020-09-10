@@ -1,6 +1,5 @@
 # IdInfo
 
-Identification information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

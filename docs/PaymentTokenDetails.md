@@ -1,6 +1,5 @@
 # PaymentTokenDetails
 
-Response details for payment token creation.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

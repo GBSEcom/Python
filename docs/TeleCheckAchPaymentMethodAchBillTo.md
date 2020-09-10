@@ -1,6 +1,5 @@
 # TeleCheckAchPaymentMethodAchBillTo
 
-Billing details for telecheck transactions.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

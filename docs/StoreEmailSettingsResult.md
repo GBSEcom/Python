@@ -1,6 +1,5 @@
 # StoreEmailSettingsResult
 
-Object that holds result from update email settings request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

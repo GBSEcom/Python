@@ -1,12 +1,10 @@
 # Secure3D21AuthenticationRequest
 
-Request authentication of the payment card using the 3DS 2.x URL redirect scheme.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authentication_type** | **str** | Indicates what kind of authentication scheme the merchant wants to use on the card. | 
-**term_url** | **str** | The result of the authentication will be sent to this URL. If not provided, a term URL will be dynamically generated. | [optional] 
-**method_notification_url** | **str** | The 3DS method iframe and transaction ID will be sent here. | [optional] 
+**term_url** | **str** | The result of the authentication will be sent to this URL. If not provided, a term URL will be dynamically generated. Note this must be a valid URL (special characters should be URL-encoded). | [optional] 
+**method_notification_url** | **str** | The 3DS method iframe and transaction ID will be sent here. Note this must be a valid URL (special characters should be URL-encoded). | [optional] 
 **challenge_indicator** | **str** | Indicates whether or not a challenge should be performed. 01 &#x3D; No preference (You have no preference whether a challenge should be performed. This is the default value) 02 &#x3D; No challenge requested (You prefer that no challenge should be performed) 03 &#x3D; Challenge requested: 3DS Requestor Preference (You prefer that a challenge should be performed) 04 &#x3D; Challenge requested: Mandate (There are local or regional mandates that mean that a challenge must be performed)  | [optional] [default to '01']
 **challenge_window_size** | **str** | Defines the size of the challenge window displayed to customers during authentication. 01 &#x3D; 250 x 400 02 &#x3D; 390 x 400 03 &#x3D; 500 x 600 04 &#x3D; 600 x 400 05 &#x3D; Full screen  | [optional] 
 

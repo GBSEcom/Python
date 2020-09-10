@@ -1,6 +1,5 @@
 # BlockCard
 
-Object that holds information about card that should be blocked.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

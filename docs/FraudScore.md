@@ -1,6 +1,5 @@
 # FraudScore
 
-Fraud likelihood assessment consisting of a score, associated warning(s), and explanation(s) of score received.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

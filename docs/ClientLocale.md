@@ -1,6 +1,5 @@
 # ClientLocale
 
-Country and language of client.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

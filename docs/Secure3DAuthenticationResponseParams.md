@@ -1,6 +1,5 @@
 # Secure3DAuthenticationResponseParams
 
-Additional parameters for authentication redirect.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

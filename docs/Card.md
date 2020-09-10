@@ -1,6 +1,5 @@
 # Card
 
-Properties for the payment method.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # PaymentSchedulesErrorResponse
 
-Payment schedules response with error field included.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

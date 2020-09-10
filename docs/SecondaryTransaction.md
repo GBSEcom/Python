@@ -1,6 +1,5 @@
 # SecondaryTransaction
 
-Model for secondary financial transactions. Abstract class, do not use this class directly, use one of its children.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

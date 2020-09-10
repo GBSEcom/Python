@@ -1,6 +1,5 @@
 # Loyalty
 
-The loyalty program information associated with this payment.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

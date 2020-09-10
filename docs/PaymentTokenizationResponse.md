@@ -14,6 +14,8 @@ Name | Type | Description | Notes
 **payment_card** | [**PaymentCard**](PaymentCard.md) |  | [optional] 
 **processor** | [**ProcessorData**](ProcessorData.md) |  | [optional] 
 **order_id** | **str** | Client order ID if supplied by client, otherwise the order ID. | [optional] 
+**ipg_transaction_id** | **str** | The response transaction ID. | [optional] 
+**merchant_transaction_id** | **str** | The unique merchant transaction ID from the request header, if supplied. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

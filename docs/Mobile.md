@@ -1,6 +1,5 @@
 # Mobile
 
-Object contains configurable style properties for mobile.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

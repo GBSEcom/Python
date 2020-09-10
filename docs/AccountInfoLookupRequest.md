@@ -1,6 +1,5 @@
 # AccountInfoLookupRequest
 
-Request to look up card-related information such as issuer country, card function and card brand associated with a payment card or payment token. Abstract class, do not use this class directly, use one of its children.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # InstallmentOptions
 
-Indicates that the total sum payable is divided for payment at successive fixed times.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

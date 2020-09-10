@@ -1,6 +1,5 @@
 # UpdateFraudSettingsRequest
 
-Provide an information for fraud settings management.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

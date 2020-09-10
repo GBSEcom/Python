@@ -1,6 +1,5 @@
 # RecurringPaymentDetailsResponse
 
-Order response containing recurring payment details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

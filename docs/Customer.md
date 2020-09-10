@@ -1,6 +1,5 @@
 # Customer
 
-Customer model for customers registered at merchant's website.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

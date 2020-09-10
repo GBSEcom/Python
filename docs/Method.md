@@ -1,6 +1,5 @@
 # Method
 
-Info about the payment method.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

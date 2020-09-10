@@ -1,12 +1,8 @@
 # UnionPayAuthenticationUpdateRequest
 
-Authentication update request specific to UnionPay transactions.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**store_id** | **str** | An optional Outlet ID for clients that support multiple stores in the same developer app. | [optional] 
-**authentication_type** | **str** | Object name of the authentication update request. | 
-**billing_address** | [**Address**](Address.md) |  | [optional] 
 **sms_verification_code** | **str** | Customer mobile number for SMS verification. | 
 **security_code** | **str** | Card security code if required by merchant. | [optional] 
 

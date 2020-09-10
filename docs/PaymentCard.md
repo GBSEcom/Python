@@ -1,6 +1,5 @@
 # PaymentCard
 
-Payment card model.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

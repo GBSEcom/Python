@@ -1,6 +1,5 @@
 # UpdateEmailSettingsResponse
 
-Response from update email settings request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

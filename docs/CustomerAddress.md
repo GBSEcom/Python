@@ -1,6 +1,5 @@
 # CustomerAddress
 
-Customer address fields.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

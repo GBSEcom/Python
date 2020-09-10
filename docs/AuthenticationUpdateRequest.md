@@ -1,6 +1,5 @@
 # AuthenticationUpdateRequest
 
-Provides shared fields for all AuthenticationUpdateRequest types. Abstract class, do not use this class directly, use one of its children.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

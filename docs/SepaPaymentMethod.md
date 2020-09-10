@@ -1,6 +1,5 @@
 # SepaPaymentMethod
 
-Payment method containing sepa information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

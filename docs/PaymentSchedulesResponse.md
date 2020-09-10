@@ -1,6 +1,5 @@
 # PaymentSchedulesResponse
 
-Response from the gateway scheduler creation call.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

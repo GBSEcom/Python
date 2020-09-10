@@ -1,6 +1,5 @@
 # SharedSecretConfigurationResponse
 
-Response from a shared secret configuration request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

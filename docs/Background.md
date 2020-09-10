@@ -1,6 +1,5 @@
 # Background
 
-Object contains background style properties.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

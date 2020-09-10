@@ -1,6 +1,5 @@
 # FraudRegistrationError
 
-Error occurred during the registration.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

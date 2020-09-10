@@ -1,6 +1,5 @@
 # FontProperties
 
-Object contains font properties.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

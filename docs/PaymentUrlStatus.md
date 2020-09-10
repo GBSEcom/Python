@@ -1,6 +1,5 @@
 # PaymentUrlStatus
 
-The status of payment URL.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

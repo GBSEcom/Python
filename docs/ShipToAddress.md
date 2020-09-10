@@ -1,6 +1,5 @@
 # ShipToAddress
 
-The address where the items in this order should be shipped to.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # UpdatePaymentToken
 
-Use this model to Update payment token.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

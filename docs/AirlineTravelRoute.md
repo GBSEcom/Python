@@ -1,6 +1,5 @@
 # AirlineTravelRoute
 
-Additional information about the route.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

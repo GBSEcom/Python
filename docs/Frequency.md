@@ -1,6 +1,5 @@
 # Frequency
 
-How often payments are sent.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

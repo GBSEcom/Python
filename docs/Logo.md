@@ -1,6 +1,5 @@
 # Logo
 
-Object contains logo data.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

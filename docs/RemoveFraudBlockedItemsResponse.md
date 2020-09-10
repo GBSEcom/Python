@@ -1,6 +1,5 @@
 # RemoveFraudBlockedItemsResponse
 
-Response from remove fraud blocked items request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

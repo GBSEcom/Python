@@ -1,6 +1,5 @@
 # EndpointResponse
 
-Provides clearing response information for the specific endpoint.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

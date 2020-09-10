@@ -1,6 +1,5 @@
 # ResponseType
 
-The type of the response.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

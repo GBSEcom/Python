@@ -1,6 +1,5 @@
 # WalletPaymentMethod
 
-Various wallet payment methods the gateway supports. Abstract class, do not use this class directly, use one of its children: EncryptedApplePayWalletPaymentMethod, EncryptedGooglePayWalletPaymentMethod, EncryptedSamsungPayWalletPaymentMethod, DecryptedApplePayWalletPaymentMethod, DecryptedGooglePayWalletPaymentMethod, DecryptedSamsungPayWalletPaymentMethod, MasterpassWalletPaymentMethod
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

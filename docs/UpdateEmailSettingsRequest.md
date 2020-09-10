@@ -1,6 +1,5 @@
 # UpdateEmailSettingsRequest
 
-Provide an information for email settings.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # PaymentTokenPaymentMethod
 
-Payment method containing payment tokenization information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

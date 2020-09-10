@@ -1,6 +1,5 @@
 # SenderInfo
 
-Sender information for a disbursement transaction.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # PaymentUrlRequest
 
-Request to generate an embedded payment link.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # BillingAddress
 
-Customer address fields associated with billing.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

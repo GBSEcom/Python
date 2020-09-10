@@ -1,6 +1,5 @@
 # Phone
 
-Phone number.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

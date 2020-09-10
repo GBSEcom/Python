@@ -1,6 +1,5 @@
 # PrimaryTransaction
 
-Provides shared fields for all PrimaryTransaction request types. Abstract class, do not use this class directly, use one of its children.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # Properties
 
-Object contains font and color properties.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # Verification3ds
 
-The result of the 3DS (3D Secure) check.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

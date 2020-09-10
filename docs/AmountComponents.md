@@ -1,6 +1,5 @@
 # AmountComponents
 
-Transaction amounts with multiple components.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # ProcessorData
 
-Model for processor data.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -15,6 +14,7 @@ Name | Type | Description | Notes
 **merchant_advice_code_indicator** | **str** | Code to map merchant advice code to ISO specification. | [optional] 
 **response_indicator** | **str** | Indicates whether the transaction was routed through the payment card&#39;s own network or through a different network. | [optional] 
 **debit_receipt_number** | **str** | Receipt number from debit network provider. | [optional] 
+**transaction_integrity_class** | **str** | MasterCard provided Transaction Integrity Class for Point of Sale (POS) Purchase and Purchase with Cash Back transactions initiated on the Authorization Platform. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -1,6 +1,5 @@
 # PaymentUrlDetailResponse
 
-Response from an embedded payment link request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,6 +1,5 @@
 # RecurringPaymentDetails
 
-Details about existing gateway schedule.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

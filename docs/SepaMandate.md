@@ -1,6 +1,5 @@
 # SepaMandate
 
-Model for the SEPA Mandate information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

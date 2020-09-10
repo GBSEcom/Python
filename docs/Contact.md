@@ -1,6 +1,5 @@
 # Contact
 
-Customer contact information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

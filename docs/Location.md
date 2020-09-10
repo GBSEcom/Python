@@ -1,6 +1,5 @@
 # Location
 
-The specific location (e.g. store or station) where the transaction takes place.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

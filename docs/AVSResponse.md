@@ -1,6 +1,5 @@
 # AVSResponse
 
-The processor address validation response for compliance.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

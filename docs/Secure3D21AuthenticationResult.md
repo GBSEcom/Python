@@ -1,10 +1,8 @@
 # Secure3D21AuthenticationResult
 
-Submit the result of the authentication managed outside of the gateway for a 3-D Secure 2.x scheme. For more convenient usage without implementing 3-D Secure yourself see \"authenticationRequest\" section.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authentication_type** | **str** | Specifies the version of 3DS to be used where authentication was managed outside of the gateway. | 
 **cavv** | **str** | The Cardholder Authentication Verification Value (CAVV) is a cryptographic value derived by the issuer during payment authentication that can provide evidence of the results of payment authentication during an online purchase. | [optional] 
 **xid** | **str** | The transaction identifier (XID) is a unique tracking number set by the merchant. | [optional] 
 **transaction_id** | **str** | The response transaction UUID. Only applicable to MasterCard. | [optional] 

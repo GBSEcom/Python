@@ -1,6 +1,5 @@
 # PaymentCardPaymentTokenUpdateRequest
 
-Request to update payment token for one or more cards.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

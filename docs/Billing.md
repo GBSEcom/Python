@@ -1,6 +1,5 @@
 # Billing
 
-Customer billing information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

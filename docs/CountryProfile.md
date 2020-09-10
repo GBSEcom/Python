@@ -1,6 +1,5 @@
 # CountryProfile
 
-Object that holds information about country.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

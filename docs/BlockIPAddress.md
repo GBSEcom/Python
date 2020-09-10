@@ -1,6 +1,5 @@
 # BlockIPAddress
 
-Object that holds information about IP address that should be blocked.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

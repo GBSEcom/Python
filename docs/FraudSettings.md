@@ -1,6 +1,5 @@
 # FraudSettings
 
-Object that holds all fraud settings.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

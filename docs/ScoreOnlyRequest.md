@@ -1,6 +1,5 @@
 # ScoreOnlyRequest
 
-Fraud detect request payload.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

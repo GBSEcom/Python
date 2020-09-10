@@ -1,6 +1,5 @@
 # Document
 
-Document information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

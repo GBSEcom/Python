@@ -1,6 +1,5 @@
 # AliPay
 
-The payment object for AliPay transactions. Use this to populate AliPay payment method details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

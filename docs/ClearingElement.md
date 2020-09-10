@@ -1,6 +1,5 @@
 # ClearingElement
 
-Holds brand specific clearing information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

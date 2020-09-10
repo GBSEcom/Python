@@ -1,6 +1,5 @@
 # ChinaDomestic
 
-The payment object for China-domestic transactions. Use this to populate all china domestic payment method details.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -12,6 +11,7 @@ Name | Type | Description | Notes
 **limit_card_function_to_debit** | **bool** | Use this to limit card functions to debit cards. | [optional] 
 **customer_id** | **str** | Use this to indicate the CUP customer ID if known. | [optional] 
 **bank_id** | **str** | Use this to indicate the CUP bank ID if known. | [optional] 
+**open_id** | **str** | Use this as unique identifier of WeChat user which is corresponded to the appid of merchant. The field is only applicable for ChinaDomesticPaymentMethod - brand &#x3D; WECHAT_DOMESTIC | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

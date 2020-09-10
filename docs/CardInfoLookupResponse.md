@@ -1,6 +1,5 @@
 # CardInfoLookupResponse
 
-Response from card info lookup request.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

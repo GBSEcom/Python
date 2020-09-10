@@ -1,6 +1,5 @@
 # Sepa
 
-The payment object for SEPA Local Payment.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

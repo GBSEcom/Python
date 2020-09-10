@@ -1,6 +1,5 @@
 # EncryptedApplePay
 
-Encrypted Apple Pay payload.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

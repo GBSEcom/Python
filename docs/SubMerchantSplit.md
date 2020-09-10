@@ -1,6 +1,5 @@
 # SubMerchantSplit
 
-Sub-merchant split object for SettlementSplit.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

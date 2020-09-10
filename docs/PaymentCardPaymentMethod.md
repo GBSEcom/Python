@@ -1,6 +1,5 @@
 # PaymentCardPaymentMethod
 
-Payment method containing payment card information.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

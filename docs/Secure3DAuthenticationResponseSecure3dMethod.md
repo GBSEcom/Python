@@ -1,6 +1,5 @@
 # Secure3DAuthenticationResponseSecure3dMethod
 
-Encapsulates the 3DS method form and unique transaction identifier.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

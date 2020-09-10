@@ -1,6 +1,5 @@
 # VerificationCvv
 
-The result of the CVV (Card Verification Value, or Card Security Code) check.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

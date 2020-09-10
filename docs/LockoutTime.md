@@ -1,6 +1,5 @@
 # LockoutTime
 
-Object that holds information about lockout times.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
