@@ -22,7 +22,7 @@ class Gateway:
 	def __init__(self, context):
 		self.context = context
 		self.authentication_api = AuthenticationApi()
-	 	self.order_api = OrderApi()
+		self.order_api = OrderApi()
 		self.payment_api = PaymentApi()
 		self.verification_api = VerificationApi()
 		self.currency_conversion_api = CurrencyConversionApi()

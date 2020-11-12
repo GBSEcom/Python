@@ -3,6 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**request_type** | **str** | Object name of the primary transaction request. | 
+**transaction_amount** | [**Amount**](Amount.md) |  | 
+**store_id** | **str** | An optional outlet ID for clients that support multiple stores in the same app. | [optional] 
+**merchant_transaction_id** | **str** | The unique merchant transaction ID from the request header, if supplied. | [optional] 
+**transaction_origin** | [**TransactionOrigin**](TransactionOrigin.md) |  | [optional] 
+**order** | [**Order**](Order.md) |  | [optional] 
 **disbursement** | [**Disbursement**](Disbursement.md) |  | 
 **payment_method** | [**PaymentTokenPaymentMethod**](PaymentTokenPaymentMethod.md) |  | 
 **stored_credentials** | [**StoredCredential**](StoredCredential.md) |  | [optional] 
