@@ -62,7 +62,7 @@ json_payload = 	"""{
 								\"month\": \"12\",
 								\"year\": \"25\"
 							},
-							\"securityCode\": \"977\",
+							\"securityCode\": \"977\"
 						}
 					}
 				}"""
