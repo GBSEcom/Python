@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Billing name. | [optional] 
+**first_name** | **str** | Billing first name. | [optional] 
+**last_name** | **str** | Billing last name. | [optional] 
 **customer_id** | **str** | Customer ID for billing purpose. | [optional] 
 **birth_date** | **date** | Customer birth date. | [optional] 
 **contact** | [**Contact**](Contact.md) |  | [optional] 

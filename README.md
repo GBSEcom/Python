@@ -1,6 +1,6 @@
 # openapi-client# First Data Gateway
 Payment Gateway API Specification.
-- API version: 6.14.0
+- API version: 21.1.0
 
 ## Requirements
 
@@ -62,7 +62,7 @@ json_payload = 	"""{
 								\"month\": \"12\",
 								\"year\": \"25\"
 							},
-							\"securityCode\": \"977\",
+							\"securityCode\": \"977\"
 						}
 					}
 				}"""
@@ -75,7 +75,6 @@ result = gateway.primary_payment_transaction(payload)
 pprint(result)
 
 ```
-
 
 ## Documentation for API Endpoints
 
@@ -163,7 +162,6 @@ Class | Method | HTTP request | Description
  - [Borders](docs/Borders.md)
  - [BrandingStyleConfigurationRequest](docs/BrandingStyleConfigurationRequest.md)
  - [BrandingStyleConfigurationResponse](docs/BrandingStyleConfigurationResponse.md)
- - [BrandingStyleConfigurationResponseAllOf](docs/BrandingStyleConfigurationResponseAllOf.md)
  - [BrandingStyleConfigurationResult](docs/BrandingStyleConfigurationResult.md)
  - [Button](docs/Button.md)
  - [CarRental](docs/CarRental.md)
@@ -173,7 +171,6 @@ Class | Method | HTTP request | Description
  - [CardInfo](docs/CardInfo.md)
  - [CardInfoLookupRequest](docs/CardInfoLookupRequest.md)
  - [CardInfoLookupResponse](docs/CardInfoLookupResponse.md)
- - [CardInfoLookupResponseAllOf](docs/CardInfoLookupResponseAllOf.md)
  - [CardVerificationRequest](docs/CardVerificationRequest.md)
  - [ChinaDomestic](docs/ChinaDomestic.md)
  - [ChinaDomesticPaymentMethod](docs/ChinaDomesticPaymentMethod.md)
@@ -185,7 +182,6 @@ Class | Method | HTTP request | Description
  - [ClearingElement](docs/ClearingElement.md)
  - [ClientLocale](docs/ClientLocale.md)
  - [ClientRegistration](docs/ClientRegistration.md)
- - [ClientRegistrationAllOf](docs/ClientRegistrationAllOf.md)
  - [CombinedMode](docs/CombinedMode.md)
  - [ConnectMode](docs/ConnectMode.md)
  - [Contact](docs/Contact.md)
@@ -193,9 +189,9 @@ Class | Method | HTTP request | Description
  - [CountryProfile](docs/CountryProfile.md)
  - [CreatePaymentToken](docs/CreatePaymentToken.md)
  - [CurrencyConversion](docs/CurrencyConversion.md)
+ - [CurrencyConversionResponse](docs/CurrencyConversionResponse.md)
  - [Customer](docs/Customer.md)
  - [CustomerAddress](docs/CustomerAddress.md)
- - [CustomerAddressAllOf](docs/CustomerAddressAllOf.md)
  - [DCCExchangeRateRequest](docs/DCCExchangeRateRequest.md)
  - [DCCExchangeRateRequestAllOf](docs/DCCExchangeRateRequestAllOf.md)
  - [Dcc](docs/Dcc.md)
@@ -210,11 +206,9 @@ Class | Method | HTTP request | Description
  - [DecryptedSamsungPayWalletPaymentMethod](docs/DecryptedSamsungPayWalletPaymentMethod.md)
  - [DecryptedSamsungPayWalletPaymentMethodAllOf](docs/DecryptedSamsungPayWalletPaymentMethodAllOf.md)
  - [DeleteBrandingStyleConfigurationResponse](docs/DeleteBrandingStyleConfigurationResponse.md)
- - [DeleteBrandingStyleConfigurationResponseAllOf](docs/DeleteBrandingStyleConfigurationResponseAllOf.md)
  - [Device](docs/Device.md)
  - [Disbursement](docs/Disbursement.md)
  - [DisbursementTransactionType](docs/DisbursementTransactionType.md)
- - [DisbursementTransactionTypeAllOf](docs/DisbursementTransactionTypeAllOf.md)
  - [Document](docs/Document.md)
  - [DynamicPricing](docs/DynamicPricing.md)
  - [DynamicPricingAllOf](docs/DynamicPricingAllOf.md)
@@ -237,10 +231,9 @@ Class | Method | HTTP request | Description
  - [ErrorDetails](docs/ErrorDetails.md)
  - [ErrorMessage](docs/ErrorMessage.md)
  - [ErrorResponse](docs/ErrorResponse.md)
- - [ErrorResponseAllOf](docs/ErrorResponseAllOf.md)
+ - [ExchangeRateDetails](docs/ExchangeRateDetails.md)
  - [ExchangeRateRequest](docs/ExchangeRateRequest.md)
  - [ExchangeRateResponse](docs/ExchangeRateResponse.md)
- - [ExchangeRateResponseAllOf](docs/ExchangeRateResponseAllOf.md)
  - [Expiration](docs/Expiration.md)
  - [FontFace](docs/FontFace.md)
  - [FontProperties](docs/FontProperties.md)
@@ -258,10 +251,8 @@ Class | Method | HTTP request | Description
  - [FraudScore](docs/FraudScore.md)
  - [FraudSettings](docs/FraudSettings.md)
  - [FraudSettingsResponse](docs/FraudSettingsResponse.md)
- - [FraudSettingsResponseAllOf](docs/FraudSettingsResponseAllOf.md)
  - [Frequency](docs/Frequency.md)
  - [FundingTransactionType](docs/FundingTransactionType.md)
- - [FundingTransactionTypeAllOf](docs/FundingTransactionTypeAllOf.md)
  - [Header](docs/Header.md)
  - [Hover](docs/Hover.md)
  - [IdInfo](docs/IdInfo.md)
@@ -288,7 +279,6 @@ Class | Method | HTTP request | Description
  - [Order](docs/Order.md)
  - [OrderErrorResponse](docs/OrderErrorResponse.md)
  - [OrderResponse](docs/OrderResponse.md)
- - [OrderResponseAllOf](docs/OrderResponseAllOf.md)
  - [PayPal](docs/PayPal.md)
  - [PayPalPaymentMethod](docs/PayPalPaymentMethod.md)
  - [PayPalPaymentMethodAllOf](docs/PayPalPaymentMethodAllOf.md)
@@ -333,11 +323,9 @@ Class | Method | HTTP request | Description
  - [PaymentMethodPaymentSchedulesRequestAllOf](docs/PaymentMethodPaymentSchedulesRequestAllOf.md)
  - [PaymentMethodType](docs/PaymentMethodType.md)
  - [PaymentRegistration](docs/PaymentRegistration.md)
- - [PaymentRegistrationAllOf](docs/PaymentRegistrationAllOf.md)
  - [PaymentSchedulesErrorResponse](docs/PaymentSchedulesErrorResponse.md)
  - [PaymentSchedulesRequest](docs/PaymentSchedulesRequest.md)
  - [PaymentSchedulesResponse](docs/PaymentSchedulesResponse.md)
- - [PaymentSchedulesResponseAllOf](docs/PaymentSchedulesResponseAllOf.md)
  - [PaymentTokenCreditTransaction](docs/PaymentTokenCreditTransaction.md)
  - [PaymentTokenCreditTransactionAllOf](docs/PaymentTokenCreditTransactionAllOf.md)
  - [PaymentTokenDetails](docs/PaymentTokenDetails.md)
@@ -353,20 +341,16 @@ Class | Method | HTTP request | Description
  - [PaymentTokenSaleTransaction](docs/PaymentTokenSaleTransaction.md)
  - [PaymentTokenSaleTransactionAllOf](docs/PaymentTokenSaleTransactionAllOf.md)
  - [PaymentTokenUpdateResponse](docs/PaymentTokenUpdateResponse.md)
- - [PaymentTokenUpdateResponseAllOf](docs/PaymentTokenUpdateResponseAllOf.md)
  - [PaymentTokenVerificationRequest](docs/PaymentTokenVerificationRequest.md)
  - [PaymentTokenVerificationRequestAllOf](docs/PaymentTokenVerificationRequestAllOf.md)
  - [PaymentTokenizationErrorResponse](docs/PaymentTokenizationErrorResponse.md)
  - [PaymentTokenizationRequest](docs/PaymentTokenizationRequest.md)
  - [PaymentTokenizationResponse](docs/PaymentTokenizationResponse.md)
- - [PaymentTokenizationResponseAllOf](docs/PaymentTokenizationResponseAllOf.md)
  - [PaymentUrlDetail](docs/PaymentUrlDetail.md)
  - [PaymentUrlDetailResponse](docs/PaymentUrlDetailResponse.md)
- - [PaymentUrlDetailResponseAllOf](docs/PaymentUrlDetailResponseAllOf.md)
  - [PaymentUrlErrorResponse](docs/PaymentUrlErrorResponse.md)
  - [PaymentUrlRequest](docs/PaymentUrlRequest.md)
  - [PaymentUrlResponse](docs/PaymentUrlResponse.md)
- - [PaymentUrlResponseAllOf](docs/PaymentUrlResponseAllOf.md)
  - [PaymentUrlStatus](docs/PaymentUrlStatus.md)
  - [PaypalCreditTransaction](docs/PaypalCreditTransaction.md)
  - [PaypalCreditTransactionAllOf](docs/PaypalCreditTransactionAllOf.md)
@@ -381,17 +365,18 @@ Class | Method | HTTP request | Description
  - [PurchaseCardsLevel2](docs/PurchaseCardsLevel2.md)
  - [PurchaseCardsLevel3](docs/PurchaseCardsLevel3.md)
  - [PurchaseCardsLevel3LineItems](docs/PurchaseCardsLevel3LineItems.md)
+ - [Receipt](docs/Receipt.md)
+ - [ReceiptLine](docs/ReceiptLine.md)
+ - [ReceiptRequestInfo](docs/ReceiptRequestInfo.md)
  - [ReceiverInfo](docs/ReceiverInfo.md)
  - [RecurringPaymentDetails](docs/RecurringPaymentDetails.md)
  - [RecurringPaymentDetailsResponse](docs/RecurringPaymentDetailsResponse.md)
- - [RecurringPaymentDetailsResponseAllOf](docs/RecurringPaymentDetailsResponseAllOf.md)
  - [ReferencedOrderPaymentSchedulesRequest](docs/ReferencedOrderPaymentSchedulesRequest.md)
  - [ReferencedOrderPaymentSchedulesRequestAllOf](docs/ReferencedOrderPaymentSchedulesRequestAllOf.md)
  - [ReferencedOrderPaymentTokenizationRequest](docs/ReferencedOrderPaymentTokenizationRequest.md)
  - [ReferencedOrderPaymentTokenizationRequestAllOf](docs/ReferencedOrderPaymentTokenizationRequestAllOf.md)
  - [RegistrationMethod](docs/RegistrationMethod.md)
  - [RemoveFraudBlockedItemsResponse](docs/RemoveFraudBlockedItemsResponse.md)
- - [RemoveFraudBlockedItemsResponseAllOf](docs/RemoveFraudBlockedItemsResponseAllOf.md)
  - [ResponseAmountComponents](docs/ResponseAmountComponents.md)
  - [ResponseAmountComponentsAllOf](docs/ResponseAmountComponentsAllOf.md)
  - [ResponseType](docs/ResponseType.md)
@@ -403,7 +388,6 @@ Class | Method | HTTP request | Description
  - [ScoreOnlyResponseFraudScoreExplanations](docs/ScoreOnlyResponseFraudScoreExplanations.md)
  - [SecondaryTransaction](docs/SecondaryTransaction.md)
  - [Secure3D10AuthenticationRequest](docs/Secure3D10AuthenticationRequest.md)
- - [Secure3D10AuthenticationRequestAllOf](docs/Secure3D10AuthenticationRequestAllOf.md)
  - [Secure3D10AuthenticationResult](docs/Secure3D10AuthenticationResult.md)
  - [Secure3D10AuthenticationResultAllOf](docs/Secure3D10AuthenticationResultAllOf.md)
  - [Secure3D10AuthenticationUpdateRequest](docs/Secure3D10AuthenticationUpdateRequest.md)
@@ -427,7 +411,6 @@ Class | Method | HTTP request | Description
  - [SepaSaleTransactionAllOf](docs/SepaSaleTransactionAllOf.md)
  - [SharedSecretConfigurationRequest](docs/SharedSecretConfigurationRequest.md)
  - [SharedSecretConfigurationResponse](docs/SharedSecretConfigurationResponse.md)
- - [SharedSecretConfigurationResponseAllOf](docs/SharedSecretConfigurationResponseAllOf.md)
  - [ShipToAddress](docs/ShipToAddress.md)
  - [Shipping](docs/Shipping.md)
  - [SoftDescriptor](docs/SoftDescriptor.md)
@@ -440,7 +423,6 @@ Class | Method | HTTP request | Description
  - [StoreUrlConfiguration](docs/StoreUrlConfiguration.md)
  - [StoreUrlConfigurationRequest](docs/StoreUrlConfigurationRequest.md)
  - [StoreUrlConfigurationResponse](docs/StoreUrlConfigurationResponse.md)
- - [StoreUrlConfigurationResponseAllOf](docs/StoreUrlConfigurationResponseAllOf.md)
  - [StoreUrlConfigurationResult](docs/StoreUrlConfigurationResult.md)
  - [StoredCredential](docs/StoredCredential.md)
  - [SubMerchantData](docs/SubMerchantData.md)
@@ -448,7 +430,6 @@ Class | Method | HTTP request | Description
  - [TeleCheckAchPaymentMethod](docs/TeleCheckAchPaymentMethod.md)
  - [TeleCheckAchPaymentMethodAchBillTo](docs/TeleCheckAchPaymentMethodAchBillTo.md)
  - [TeleCheckCBPPaymentMethod](docs/TeleCheckCBPPaymentMethod.md)
- - [TeleCheckCBPPaymentMethodAllOf](docs/TeleCheckCBPPaymentMethodAllOf.md)
  - [TeleCheckICAPaymentMethod](docs/TeleCheckICAPaymentMethod.md)
  - [TeleCheckICAPaymentMethodAllOf](docs/TeleCheckICAPaymentMethodAllOf.md)
  - [Text](docs/Text.md)
@@ -458,7 +439,6 @@ Class | Method | HTTP request | Description
  - [TransactionErrorResponse](docs/TransactionErrorResponse.md)
  - [TransactionOrigin](docs/TransactionOrigin.md)
  - [TransactionResponse](docs/TransactionResponse.md)
- - [TransactionResponseAllOf](docs/TransactionResponseAllOf.md)
  - [TransactionType](docs/TransactionType.md)
  - [UnionPayAuthenticationRequest](docs/UnionPayAuthenticationRequest.md)
  - [UnionPayAuthenticationRequestAllOf](docs/UnionPayAuthenticationRequestAllOf.md)
@@ -466,10 +446,8 @@ Class | Method | HTTP request | Description
  - [UnionPayAuthenticationUpdateRequestAllOf](docs/UnionPayAuthenticationUpdateRequestAllOf.md)
  - [UpdateEmailSettingsRequest](docs/UpdateEmailSettingsRequest.md)
  - [UpdateEmailSettingsResponse](docs/UpdateEmailSettingsResponse.md)
- - [UpdateEmailSettingsResponseAllOf](docs/UpdateEmailSettingsResponseAllOf.md)
  - [UpdateFraudSettingsRequest](docs/UpdateFraudSettingsRequest.md)
  - [UpdateFraudSettingsResponse](docs/UpdateFraudSettingsResponse.md)
- - [UpdateFraudSettingsResponseAllOf](docs/UpdateFraudSettingsResponseAllOf.md)
  - [UpdatePaymentToken](docs/UpdatePaymentToken.md)
  - [UsePaymentToken](docs/UsePaymentToken.md)
  - [Verification3ds](docs/Verification3ds.md)
@@ -483,3 +461,8 @@ Class | Method | HTTP request | Description
  - [WalletPreAuthTransactionAllOf](docs/WalletPreAuthTransactionAllOf.md)
  - [WalletSaleTransaction](docs/WalletSaleTransaction.md)
  - [WalletSaleTransactionAllOf](docs/WalletSaleTransactionAllOf.md)
+
+
+## Documentation For Authorization
+
+ All endpoints do not require authorization.

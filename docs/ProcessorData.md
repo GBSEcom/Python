@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **association_response_code** | **str** | Raw response code from issuer. | [optional] 
 **response_message** | **str** | Message returned from endpoints. | [optional] 
 **avs_response** | [**AVSResponse**](AVSResponse.md) |  | [optional] 
+**cardholder_info_response** | [**CardholderInfoResponse**](CardholderInfoResponse.md) |  | [optional] 
 **security_code_response** | **str** | Code returned for CVV. | [optional] 
 **merchant_advice_code_indicator** | **str** | Code to map merchant advice code to ISO specification. | [optional] 
 **response_indicator** | **str** | Indicates whether the transaction was routed through the payment card&#39;s own network or through a different network. | [optional] 
