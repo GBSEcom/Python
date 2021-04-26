@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **api_trace_id** | **str** | Request identifier in API, can be used to request logs from the support team. | [optional] 
 **response_type** | [**ResponseType**](ResponseType.md) |  | [optional] 
 **request_status** | **str** | Request status. If it is anything other than &#39;SUCCESS&#39;, please refer to 400s HTTP error codes or decline. See Error object for details. | [optional] 
-**order_id** | **str** | Client order ID if supplied by client, otherwise the order ID. | [optional] 
+**order_id** | **str** | Note - Client Order ID if supplied by client. If not supplied by client, IPG will generate. The first 12 alphanumeric digits are passed down to Fiserv Enterprise reporting tool, Clientline and Data File Manager (DFM). | [optional] 
 **payment_url** | **str** | URL for embedded payment link. | [optional] 
 **transaction_id** | **str** | ID code from the transaction. | [optional] 
 **error** | [**Error**](Error.md) |  | [optional] 

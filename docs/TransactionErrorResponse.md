@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **api_trace_id** | **str** | Request identifier in API, can be used to request logs from the support team. | [optional] 
 **response_type** | [**ResponseType**](ResponseType.md) |  | [optional] 
 **ipg_transaction_id** | **str** | The response transaction ID. | [optional] 
-**order_id** | **str** | Client order ID if supplied by client, otherwise the order ID. | [optional] 
+**order_id** | **str** | Note - Client Order ID if supplied by client. If not supplied by client, IPG will generate. The first 12 alphanumeric digits are passed down to Fiserv Enterprise reporting tool, Clientline and Data File Manager (DFM). | [optional] 
 **transaction_type** | [**TransactionType**](TransactionType.md) |  | [optional] 
 **payment_token** | [**PaymentTokenDetails**](PaymentTokenDetails.md) |  | [optional] 
 **transaction_origin** | [**TransactionOrigin**](TransactionOrigin.md) |  | [optional] 
@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **account_updater_response** | [**AccountUpdaterResponse**](AccountUpdaterResponse.md) |  | [optional] 
 **ach_response** | [**AchResponse**](AchResponse.md) |  | [optional] 
 **currency_conversion_response** | [**CurrencyConversionResponse**](CurrencyConversionResponse.md) |  | [optional] 
+**steps** | [**list[PaymentStepRequest]**](PaymentStepRequest.md) | Steps to be performed by the payer. | [optional] 
 **error** | [**Error**](Error.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

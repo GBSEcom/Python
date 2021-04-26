@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**customer_reference_id** | **str** | Customer code/customer reference ID. | [optional] 
+**customer_reference_id** | **str** | Customer code/customer reference ID. The max length supported for Visa is 12 and MasterCard is 17. | [optional] 
 **supplier_invoice_number** | **str** | Purchase identifier/merchant-related data. | [optional] 
 **supplier_vat_registration_number** | **str** | Merchant VAT registration/single business reference number/merchant tax ID or corporation VAT number. | [optional] 
 **total_discount_amount_and_rate** | [**AdditionalAmountRate**](AdditionalAmountRate.md) |  | [optional] 

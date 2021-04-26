@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **frequency** | [**Frequency**](Frequency.md) |  | 
 **transaction_amount** | [**Amount**](Amount.md) |  | 
 **client_locale** | [**ClientLocale**](ClientLocale.md) |  | [optional] 
-**order_id** | **str** | Client order ID if supplied by client. | [optional] 
+**order_id** | **str** | Note - Client Order ID if supplied by client. If not supplied by client, IPG will generate. The first 12 alphanumeric digits are passed down to Fiserv Enterprise reporting tool, Clientline and Data File Manager (DFM). | [optional] 
 **billing** | [**Billing**](Billing.md) |  | [optional] 
 **shipping** | [**Shipping**](Shipping.md) |  | [optional] 
 **comments** | **str** | User supplied comments. | [optional] 

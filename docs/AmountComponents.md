@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **shipping** | **float** | Shipping amount. | [optional] 
 **cashback** | **float** | Cashback amount. | [optional] 
 **tip** | **float** | Tip amount. | [optional] 
+**surcharge** | **float** | Surcharge amount. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
