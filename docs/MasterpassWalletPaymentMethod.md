@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**wallet_type** | **str** | Type of wallet. | 
 **wallet_id** | **str** | Masterpass Wallet ID. | 
 **payment_card** | [**PaymentCard**](PaymentCard.md) |  | 
 

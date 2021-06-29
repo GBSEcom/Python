@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "first_data_gateway"
-VERSION = "1.11.0"
+VERSION = "1.12.0"
 # To install the library, run the following
 #
 # python setup.py install
@@ -35,5 +35,5 @@ setup(
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
     license = 'MIT',
-    long_description="Python SDK to be used with a First Data Gateway account (IPG API v21.2). This SDK has been created and packaged to offer the easiest way to integrate your application into the First Data Gateway. This SDK gives you the ability to run transactions such as sales, preauthorizations, postauthorizations, credits, voids, and returns; transaction inquiries; setting up scheduled payments and much more."
+    long_description="Python SDK to be used with a First Data Gateway account (IPG API v21.3). This SDK has been created and packaged to offer the easiest way to integrate your application into the First Data Gateway. This SDK gives you the ability to run transactions such as sales, preauthorizations, postauthorizations, credits, voids, and returns; transaction inquiries; setting up scheduled payments and much more."
 )

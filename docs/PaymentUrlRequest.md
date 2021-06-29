@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **hosted_payment_page_text** | **str** | The text to be displayed to the payer on the hosted payment page. | [optional] 
 **ip** | **str** | IPv4 or IPv6 network address. | [optional] 
 **revolving_options** | [**RevolvingOptions**](RevolvingOptions.md) |  | [optional] 
+**installment_options** | [**InstallmentOptions**](InstallmentOptions.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

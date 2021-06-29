@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **cardholder_name** | **str** | Name of the cardholder. | [optional] 
 **brand** | **str** | Card brand. | [optional] 
 **cryptogram** | **str** | The wallet cryptogram from the decrypted data. | 
-**eci_indicator** | **str** | The ECI indicator from the decrypted data. | 
+**eci_indicator** | **str** | The ECI indicator from the decrypted data. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

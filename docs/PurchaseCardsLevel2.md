@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **supplier_vat_registration_number** | **str** | Merchant VAT registration/single business reference number/merchant tax ID or corporation VAT number. | [optional] 
 **total_discount_amount_and_rate** | [**AdditionalAmountRate**](AdditionalAmountRate.md) |  | [optional] 
 **vat_shipping_amount_and_rate** | [**AdditionalAmountRate**](AdditionalAmountRate.md) |  | [optional] 
+**duty_amount_and_rate** | [**AdditionalAmountRate**](AdditionalAmountRate.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
