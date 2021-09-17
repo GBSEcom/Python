@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **merchant_transaction_id** | **str** | The unique merchant transaction ID from the request header, if supplied. | [optional] 
 **transaction_origin** | [**TransactionOrigin**](TransactionOrigin.md) |  | [optional] 
 **order** | [**Order**](Order.md) |  | [optional] 
+**ipg_transaction_id** | **int** | The IPG transactionId to reference a payerauth for example. | [optional] 
 **allow_partial_approval** | **bool** | Indicates if the particular transaction is a partial approval transaction, if supplied. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

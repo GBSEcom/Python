@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **mcc** | **str** | Merchant category code. | 
 **legal_name** | **str** | Store legal name. | [optional] 
+**email** | **str** | Sub-merchant email. | [optional] 
 **timezone** | **str** | Timezone. | [optional] 
 **address** | [**Address**](Address.md) |  | [optional] 
 **document** | [**Document**](Document.md) |  | [optional] 

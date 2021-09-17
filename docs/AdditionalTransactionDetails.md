@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **disbursement_trans_type** | **str** | The type of debit disbursement transaction. | [optional] 
 **wallet_provider** | **str** | The wallet provider type. | [optional] 
 **receipts** | [**list[Receipt]**](Receipt.md) | Provides receipt response data, if it has been requested. | [optional] 
+**additional_response_data** | [**AdditionalResponseData**](AdditionalResponseData.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

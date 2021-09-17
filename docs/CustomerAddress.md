@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **state_province** | **str** | State or province. | [optional] 
 **city** | **str** | City. | [optional] 
 **country** | **str** | Country. | 
-**zip_postal_code** | **str** | Postal code. | 
+**zip_postal_code** | **str** | Postal code. | [optional] 
 **phone** | [**Phone**](Phone.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
