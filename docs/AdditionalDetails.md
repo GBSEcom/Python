@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **comments** | **str** | Comments for the payment. | [optional] 
 **invoice_number** | **str** | Invoice number. | [optional] 
 **purchase_order_number** | **str** | Purchase order number. | [optional] 
+**mrchnt_ref_data** | **str** | Merchant Reference Data 2. | [optional] 
 **operator_id** | **str** | The operator ID. | [optional] 
 **sales_system_id** | **str** | The sales system ID. | [optional] 
 **ipg_deferred_auth** | **bool** | Indicates if the particular transaction is a deferred authorization. | [optional] 

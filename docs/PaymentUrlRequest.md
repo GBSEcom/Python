@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **ip** | **str** | IPv4 or IPv6 network address. | [optional] 
 **revolving_options** | [**RevolvingOptions**](RevolvingOptions.md) |  | [optional] 
 **installment_options** | [**InstallmentOptions**](InstallmentOptions.md) |  | [optional] 
+**basket** | [**Basket**](Basket.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

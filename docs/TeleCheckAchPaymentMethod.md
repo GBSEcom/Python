@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **session_id** | **str** | Session identifier. | 
 **terminal_state** | **str** | Identifies the US state or territory where the original sale transaction occurred. | [optional] 
 **terminal_city** | **str** | Identifies the city where the original sale transaction occurred. | [optional] 
-**ach_bill_to** | [**TeleCheckAchPaymentMethodAchBillTo**](TeleCheckAchPaymentMethodAchBillTo.md) |  | 
+**ach_bill_to** | [**TeleCheckAchPaymentMethodAchBillTo**](TeleCheckAchPaymentMethodAchBillTo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

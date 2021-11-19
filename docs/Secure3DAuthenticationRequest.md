@@ -11,7 +11,9 @@ Name | Type | Description | Notes
 **browser_java_script_enabled** | **bool** | Indicates if the browser issuing the request is capable of performing JavaScript. | [optional] 
 **secure3_d_device_channel** | **str** | 02 &#x3D; BRW 03 &#x3D; 3RI  | [optional] 
 **secure3_d_three_ri_indicator** | **str** | 01 &#x3D; Recurring transaction 02 &#x3D; Instalment transaction 03 &#x3D; Add card 04 &#x3D; Maintain card information 05 &#x3D; Account verification 06 &#x3D; Split/delayed shipment 07 &#x3D; Top-up 08 &#x3D; Mail Order 09 &#x3D; Telephone Order 10 &#x3D; Whitelist status check 11 &#x3D; Other payment  | [optional] 
-**requestor_authentication_indicator** | **str** | Indicates whether or not a challenge should be performed. 01 &#x3D; Payment transaction 02 &#x3D; Recurring transaction 03 &#x3D; Installment transaction 04 &#x3D; Add card 05 &#x3D; Maintain card 06 &#x3D; Card holder verification as part of EMV token ID and Value  | [optional] [default to '01']
+**authentication_indicator** | **str** | Provides additional information to the ACS to determine the best approach for handling an authentication request. 01 &#x3D; Payment transaction 02 &#x3D; Recurring transaction 03 &#x3D; Installment transaction 04 &#x3D; Add card 05 &#x3D; Maintain card 06 &#x3D; Card holder verification as part of EMV token ID and Value  | [optional] [default to '01']
+**recurring_expiry** | **str** | Date after which no further authorisations shall be performed. | [optional] 
+**recurring_frequency** | **int** | Indicates the minimum number of days between authorisations. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
